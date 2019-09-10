@@ -24,7 +24,16 @@ github_username:  jadry92
 # Build settings
 markdown: kramdown
 theme: minima
+<<<<<<< HEAD
 #plugins: - jekyll-feed
+=======
+<<<<<<< HEAD
+plugins:
+- jekyll-feed
+=======
+plugins: - jekyll-feed
+>>>>>>> 86f061b7e81df34df0e25f0b396ec7665d5447dc
+>>>>>>> d84c3af91c36b893512f7708d06a562008be2ef8
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
