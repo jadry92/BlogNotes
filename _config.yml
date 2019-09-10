@@ -15,10 +15,9 @@
 # in the templates via {{ site.myvariable }}.
 title: My notes
 email: jhoanseb1992@gmail.com
-description: >- # this means to ignore newlines until "baseurl:"
-If you have any question feel free to contact me by email, Twitter and GitHub.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+description: If you have any question feel free to contact me by email, Twitter and GitHub.
+#baseurl: "" # the subpath of your site, e.g. /blog
+#url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jadry92
 github_username:  jadry92
 
@@ -26,7 +25,7 @@ github_username:  jadry92
 markdown: kramdown
 theme: minima
 plugins:
-  - jekyll-feed
+- jekyll-feed
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
