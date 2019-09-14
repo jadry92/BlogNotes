@@ -1,0 +1,26 @@
+---
+layout: post
+title: "How to find the best price in tech gadgets in Australia's retail stores"
+---
+
+All my life I've been passionate about technology, every time that I see a new gadget I ask myself "how does it work?", "Why this designed?", "Why is it so expensive?". But more of the times I've just watched these devices in Youtube video or blog post because it's not affordable to me.
+
+But, I was thinking about to create a command-line tool (CLI) for Unix and Linux to scraper date from all Australia tech-sell pages such as Officeworks, JB Hi-Fi, Harvey Norman. My first idea is using a Python library for CLI sort of "argparse", "click", "fire", etc.
+
+holas_asasñsda
+The command could be :
+
+```Bash
+NAME
+  find-product -- find price of a specific product
+DESCRIPTION
+  The find-product utility search in all
+  pages that are listed in the config files
+
+  The options are as follows:
+
+  -name [name]
+        The name of the product that I want to find.
+```
+
+This could be the first version of the description file in de CLI. The repository is in this [link](https://github.com/jadry92 "GitHub page").
