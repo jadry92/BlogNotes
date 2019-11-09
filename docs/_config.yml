@@ -10,5 +10,3 @@ instagram_username: jadry92
 # Build settings
 markdown: kramdown
 theme: jekyll-theme-minimal
-plugins:
-  - jekyll-feed
