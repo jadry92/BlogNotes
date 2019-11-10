@@ -1,12 +1,17 @@
-
 title: My notes
 email: jhoanseb1992@gmail.com
+author: Johan Suarez
 description: If you have any question feel free to contact me by email, Twitter and GitHub.
 #baseurl: "" # the subpath of your site, e.g. /blog
 #url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jadry92
-github_username:  jadry92
-instagram_username: jadry92
+
+social_links:
+  twitter: jadry92
+  github: jadry92
+  linkedin: johan-sebastian-suarez-largo-a9980499
+  instagram: jadry92
+
+logo: assets/img/logo.png
 # Build settings
 markdown: kramdown
 theme: jekyll-theme-minimal
