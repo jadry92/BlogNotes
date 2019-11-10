@@ -1,11 +1,19 @@
 <header>
-  <h1><a class="main-title" href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
+  <h1>
+    <a class="main-title" href="{{ "/" | absolute_url }}">
+    {{ site.title | default: site.github.repository_name }}
+    </a>
+  </h1>
 
   {% if site.logo %}
-    <img src="{{site.logo | relative_url}}" alt="Logo" />
+    <img src="{{ site.logo | relative_url }}" alt="Logo" />
   {% endif %}
 
-  <p>By: <a class="author-name" href="{{ "/about" | relative_url }}">Johan Suarez</a></p>
+  <p>By:
+    <a class="author-name" href="{{ "/about/" | relative_url }}">
+      Johan Suarez
+    </a>
+  </p>
 
   <h2 class="categories-title">Categories</h2>
   <div class="categories-list">
