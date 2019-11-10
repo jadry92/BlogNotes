@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Regular Expressions
+category: Notes
 ---
 
 ```
