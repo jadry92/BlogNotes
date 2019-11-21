@@ -4,7 +4,7 @@ author: "Johan Suarez"
 description: "Blog notes"
 #baseurl: "Mynotes" # the subpath of your site, e.g. /blog
 #url: "" # the base hostname & protocol for your site, e.g. http://example.com
-
+google_analytics: UA-153097760-1
 social_links:
   twitter: "jadry92"
   github: "jadry92"
