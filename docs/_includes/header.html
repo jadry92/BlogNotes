@@ -1,6 +1,8 @@
 <header>
   {% if site.logo %}
-    <img src="{{ site.logo | relative_url }}" alt="Logo" />
+    <a href="/">
+      <img src="{{ site.logo | relative_url }}" alt="Logo" />
+    </a>
   {% endif %}
 
   <p>By:
@@ -12,10 +14,9 @@
   <h2 class="categories-title">Categories</h2>
   <div class="categories-list">
     <ul>
-      <li><a href="{{ "/" | absolute_url }} ">Home</a></li>
-      <li><a href="{{ "/" | absolute_url }} ">Ideas</a></li>
-      <li><a href="{{ "/" | absolute_url }} ">Notes</a></li>
-      <li><a href="{{ "/" | absolute_url }} ">Tutorials</a></li>
+      <li><a href="{{ "/ideas" | absolute_url }} ">Ideas</a></li>
+      <li><a href="{{ "/notes" | absolute_url }} ">Notes</a></li>
+      <li><a href="{{ "/tutorials" | absolute_url }} ">Tutorials</a></li>
     </ul>
   </div>
 
