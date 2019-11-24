@@ -6,6 +6,7 @@ career as in tech industry.
 You might find post about different topics such as AI (Artificial intelligence),
 Linux, Backend Development and so on.
 
+## Last Posts :
 
 <ul>
   {% for post in site.posts %}
