@@ -1,7 +1,8 @@
 ---
 layout: post
 title: "How to find the best price in tech gadgets in Australia's retail stores"
-category: Ideas
+category: [Ideas]
+tags: [Python,Web scraper,tech price]
 ---
 
 All my life I've been passionate about technology, every time that I see a new
@@ -18,7 +19,7 @@ The command could be :
 
 ```Bash
 NAME
-  find-product -- find price of a specific product
+  find-product -- find the price of a specific product
 DESCRIPTION
   The find-product utility search in all
   pages that are listed in the config files
@@ -29,4 +30,4 @@ DESCRIPTION
         The name of the product that I want to find.
 ```
 
-This could be the first version of the description file in de CLI. The repository is in this [link](https://github.com/jadry92 "GitHub page").
+This could be the first version of the description file in de CLI. The repository is in this [link](https://github.com/jadry92).

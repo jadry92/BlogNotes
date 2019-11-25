@@ -6,13 +6,15 @@ categories: [Ideas]
 tags: [Django]
 ---
 
-_Twitte_ : "E-commerce example with Django"
+A few days ago talking with a friend how is a game developer, I asked him "how do get inspired to create new things?", he just answers "I just create something that other has already done" :astonished: . I thought "Wow simple but true".
 
-This idea come to me becase I've been studing Django for the last 3 weeks.
-As I see this could be a BIG and chalengin project to me becouse my experience with
-Django is small.
+:bulb:"E-commerce example with Django":bulb:
 
-First, I'm going to star reading about E-commerce and its structuter. Also I belive
-there are and other projects like this so I'll check about it.
+This idea comes to me because I've been studying Django for the last 3 weeks.
+As I see this could be a BIG and challenging project to me because my experience with Django is small.
 
-...
+First, I'm going to start reading about E-commerce and its structure. Also, I believe there are and other projects like this so I'll check it and try to find one to don't start from zero.
+
+In this [link](https://github.com/jadry92) will be hosted the code of the idea.
+
+... in construction ...

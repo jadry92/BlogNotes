@@ -1,0 +1,198 @@
+---
+layout: post
+title: "_Script_ para ordenar los _screen shots_ en carpetas por echas."
+date: 2019-09-15
+categories: [Tutorials]
+tags: [Bash, crontap]
+---
+
+A modo de proyecto para este curso de linea de commando, decidi copiar la idea del profesor de un _script_ que ordenar todos los _screen shots_ en carpetas respecto a cuando fueron creados.
+
+Mi primer idea de solución lo dibuje en el siguiente diagrama.
+```mermaid
+graph TD
+A[MONTHS = Listar todos los<br>meses de creación de los archivos] --> B{For i in MONTHS};
+B --> C[Crear carpetas];
+C --> D[Mover cada elemento a su respectiva carpeta];
+D --> B
+D --> E(Fin)
+```
+
+### Paso 1:
+El primer paso es determinar los meses en que los archivos fueron creados, para ello use:
+
+```bash
+ls -l
+```
+Resultado :
+```bash
+..
+-rw-r--r--@ 1 johan  staff 104354 29 Aug 12:15 WhatsApp Image 2019-08-29 at 12.14.52 PM.jpeg
+-rw-r--r--@ 1 johan  staff  23758 24 Jul 10:14 switch.png
+drwxr-xr-x  2 johan  staff 64 17 Oct 21:05 test
+-rw-r-x-w-@ 1 johan  staff  0 17 Oct 20:22 text.txt
+```
+
+Luego con `grep` y una expression regural enfocadata en filtrar solo elementos. Mi idea es filtrar el resultado de listado usar el comienza con '-' es
+
+```bash
+ls -l | grep "^-.*$"
+```
+ Resultado:
+```bash
+..
+-rw-r--r--@ 1 johan  staff 104354 29 Aug 12:15 WhatsApp Image 2019-08-29 at 12.14.52 PM.jpeg
+-rw-r--r--@ 1 johan  staff  23758 24 Jul 10:14 switch.png
+-rw-r-x-w-@ 1 johan  staff  0 17 Oct 20:22 text.txt
+```
+
+Luego con `awk` y un `print` para filtrar los meses en que los archivos fueron creados. De este [link](https://superuser.com/questions/813555/how-to-use-the-awk-to-print-the-output) encontre esta forma de hacerlo.
+
+```bash
+ls -l | grep "^-.*$" | awk '{print $7}'
+```
+Resultado:
+```bash
+..
+Sep
+Sep
+Oct
+Oct
+Oct
+Jul
+Sep
+Sep
+Sep
+Sep
+Aug
+Jul
+Oct
+..
+```
+
+Luego para filtrar todos los elementos repetidos, encontre [acá](https://stackoverflow.com/questions/13648410/how-can-i-get-unique-values-from-an-array-in-bash) que con `sort -u` puedo hacerlo:
+
+```bash
+ls -l | grep "^-.*$" | awk '{print $7}' | sort -u
+```
+
+Para guardar el resultado de este comando en una variable de _bash_ enconter [acá](https://stackoverflow.com/questions/10319745/redirecting-command-output-to-a-variable-in-bash-fails) que se hace así:
+
+```bash
+MONTHS=$(ls -l | grep "^-.*$" | awk '{print $7}' | sort -u)
+```
+Y además cree este comando para determinar el año de creación de los archivos:
+```bash
+YEAR=$(date | awk '{print $4}')
+```
+
+Para formalizar el _script_ cree un archivo llamado "_sort_screen_shots.sh_" y se ve así :
+
+```bash
+#!/bin/bash
+MONTHS=$(ls -l | grep "^-.*$" | awk '{print $7}' | sort -u)
+YEAR=$(date | awk '{print $4}')
+```
+
+
+### Paso 2:
+
+El segundo paso es la creación de las carpetas  donde se van a ordenar los elementos, para ello use un ciclo `for` el cual es muy parecido al de Python, [acá](https://www.cyberciti.biz/faq/bash-for-loop/) encontre como se define. Y si lo aplico a mi proyecto se veria de la siguiente manera:
+
+```bash
+#!/bin/bash
+MONTHS=$(ls -l | grep "^-.*$" | awk '{print $7}' | sort -u)
+YEAR=$(date | awk '{print $4}')
+
+for i in  $MONTHS
+do
+	echo  "$i-$YEAR"
+done
+```
+Resultado:
+
+```bash
+Aug-2019
+Jul-2019
+Oct-2019
+Sep-2019
+```
+
+Siguiendo mi primera idea solo es remplasar el `echo` por `mkdir -p` para crear las carpetas donde se van a comodar los elementos, el `-p` e es para que si la carpeta ya esta no genere error.
+
+### Paso 3
+
+El tercer paso es mover los elementos a sus carpetas respectivas. Para ello dentro del cliclo `for` aplique una expresión regular que filtrara los elementos que fueron creados en ese respectivo mes y luego con `awk` tomo el nombre para mover los archivos. El _script_ se ve de la siguiente manera.
+
+```bash
+#!/bin/bash
+MONTHS=$(ls -l | grep "^-.*$" | awk '{print $7}' | sort -u)
+YEAR=$(date | awk '{print $4}')
+
+for i in  $MONTHS
+do
+	mkdir -p $i-$YEAR
+	REGEX="^-.*\s${i}\s\d\d:\d\d.*$"
+	FILES_TO_MOVE=$(ls -l | grep $REGEX | awk '{print $9}')
+	mv -v $FILES_TO_MOVE $i-$YEAR/
+done
+```
+La expresión se puede enteder de la siguiente manera:
+
+[img]
+
+Si no entendiste la expreción regular te invito a hacer el curso de [Regex](https://platzi.com/clases/expresiones-regulares/) (Excelente curso!)
+
+Pero el _script_ aún no funciona, por que los nombres se generan con espasios en MacOs , entonces `awk` nos retorna solo la primera parte del nombre de los archivos. Buscando por internet varias formas de solucionar esto [1](https://stackoverflow.com/questions/7039130/iterate-over-a-list-of-files-with-spaces), [2](https://unix.stackexchange.com/questions/310320/extracting-a-part-of-string-using-grep-sed-awk), pero creo la mejor solución seria cambiar los " " por "_" en los nombres y así  lo implemente:
+
+```bash
+# rename files
+for f in "$(ls | grep '\s')"
+do
+	mv "$f" "${f// /_}"
+done
+```
+Esta idea la tome de este [foro](https://stackoverflow.com/questions/2709458/how-to-replace-spaces-in-file-names-using-a-bash-script) y muestra una funcionalida de _bash_ llamada "[_Parameter expansion_](https://wiki.bash-hackers.org/syntax/pe)" (MUY Interesante).
+
+Y al final mi _scrip_ quedo de la siguiente manera:
+Versión final:
+```bash
+#!/bin/bash
+# path of the screen shots folder
+PATH_SCREEN_SHOT="$HOME/Documents/screen-shots"
+SORT_DATE=$(date)
+echo "Date of sort $SORT_DATE"
+#  move to the main path
+echo "move to $PATH_SCREEN_SHOT"
+cd $PATH_SCREEN_SHOT
+
+# rename files
+for f in "$(ls | grep '\s')"
+do
+	if [ -n "$f" ]
+	then
+		mv -v "$f" "${f// /_}"
+	fi
+done
+
+# move files
+MONTHS=$(ls -l | grep '^-.*$' | awk '{print $7}' | sort -u)
+YEAR=$(date | awk '{print $4}' )
+echo 'Beginning To Move'
+for i in $MONTHS
+do
+	if [ -n "$i" ]
+	then
+		mkdir -pv $i-$YEAR
+		REGEX="^-.*\s${i}\s\d\d:\d\d.*$"
+		FILES_TO_MOVE=$(ls -l | grep $REGEX | awk '{print $9}')
+		mv -v $FILES_TO_MOVE $i-$YEAR/
+	fi
+done
+```
+
+Agrege un `if` en cada `for` para evitar porblemas cuando no se encuentren archivos el _script_ no genere errores, ademas `echo` y `-v` para crear un ".log" de la ejecución.
+
+### Paso 4:
+
+El cuarto paso es agregar el _script_ al crontap
