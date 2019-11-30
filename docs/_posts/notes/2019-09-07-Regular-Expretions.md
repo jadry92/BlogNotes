@@ -6,7 +6,7 @@ category: Notes
 
 "Regular Expressions are the key tools that all Developer should have in their pocket", it's the phrase with the teacher Alberto Alcocer repat constantly in the course in Platzi.
 
-A Regex (Regular Expression) is a patter which is possible to filter strings without using a lot of resources. Regexs are 
+A Regex (Regular Expression) is a patter which is possible to filter strings without using a lot of resources. Regexes are commonly used to filter URL, phone numbers, emails and so on:
 Example:
 String: 
 ```
@@ -27,6 +27,6 @@ Hello
 ? -> zero or one
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5Mjk0MDk0ODEsLTM1MzY5NTQ5NSwtNj
-A1MTE5MTA0XX0=
+eyJoaXN0b3J5IjpbODI0OTY3MTgwLC0zNTM2OTU0OTUsLTYwNT
+ExOTEwNF19
 -->
