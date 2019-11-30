@@ -23,13 +23,13 @@ We would find that:
 
 But what does it mean all those weird characters? :unamused: :expressionless:
 
-First thing that we has to now about a Regex is that each caracter has a spesific meaning. For example, "`.`" means whaever caracter, thats mean:
 
-If my string is `hola` and the Regex is `.` the restul will be:
-==`hola`== with 4 machs
+The first thing that we have to now about a Regex is that each character has a specific meaning. For example, "`.`" means whatever character, that's mean:
 
+If my string is `hola` and the Regex is `.` the result will be ==`hola`==.
+Where all the string with each letter making matched with the Regex.
 
-the basic CheatSheets and how to use.
+The basic CheatSheets that we should have in mind to read an creat our .
 
 ##### Class:
 ``` 
@@ -49,8 +49,8 @@ $ -> end of the line
 ? -> zero or one
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjExMzYzMDA3LC0zNjA2ODY3ODUsLTEyMD
-gzMjI5MDMsNzg5MDMyOCwzMTA4MzQ0NzksNDE5NjA0NjMsMTg5
-ODM1NDk4Nyw4MjQ5NjcxODAsLTM1MzY5NTQ5NSwtNjA1MTE5MT
-A0XX0=
+eyJoaXN0b3J5IjpbMzgyODgzNTU2LDYxMTM2MzAwNywtMzYwNj
+g2Nzg1LC0xMjA4MzIyOTAzLDc4OTAzMjgsMzEwODM0NDc5LDQx
+OTYwNDYzLDE4OTgzNTQ5ODcsODI0OTY3MTgwLC0zNTM2OTU0OT
+UsLTYwNTExOTEwNF19
 -->
