@@ -22,7 +22,8 @@ We would find that:
 ![example 1]()
 
 But what does it mean all those weird characters? :unamused: :expressionless:
-Before to show all meaning, I need to show you the basic CheatSheets and how to use: 
+Before to show all meaning, I need to show you the basic CheatSheets and how to use.
+
 ```
 . -> whatever ca racter
 \w - > find any conjunct that looks like as word
@@ -35,7 +36,7 @@ Before to show all meaning, I need to show you the basic CheatSheets and how to 
 ? -> zero or one
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzg5MDMyOCwzMTA4MzQ0NzksNDE5NjA0Nj
-MsMTg5ODM1NDk4Nyw4MjQ5NjcxODAsLTM1MzY5NTQ5NSwtNjA1
-MTE5MTA0XX0=
+eyJoaXN0b3J5IjpbLTEzMzcyMzMxNDIsNzg5MDMyOCwzMTA4Mz
+Q0NzksNDE5NjA0NjMsMTg5ODM1NDk4Nyw4MjQ5NjcxODAsLTM1
+MzY5NTQ5NSwtNjA1MTE5MTA0XX0=
 -->
