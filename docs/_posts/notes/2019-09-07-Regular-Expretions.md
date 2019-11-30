@@ -40,8 +40,8 @@ The basics classes are in the next  CheatSheets. We should have in mind all of i
 ### Basics Class:
 ```
 . -> whatever caracter
-\w - > find any conjunct that looks like as word
-\d - > find all the digits
+\w - > represents all words,
+\d - > represents all digits
 \s - > spaces in blank
 ```
 
@@ -72,7 +72,7 @@ And we can repeat class using the counters. There are general counters and speci
 ```
 #### Example 4:
 
-[`hola=hi`] - >  [`\w{2,3}`] - >  [`o`] [`l`] \
+[`hola=hi`] - >  [`\w{2,3}`] - >  [`hol`] [`hi`] \
 where:\
 [**input**] - > [**Regex**] - > [**Result**]
 
@@ -82,7 +82,7 @@ where:\
 $ -> end of the line
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc3MDkyMDA4Myw1OTIwNzI5NywtOTY2Mj
+eyJoaXN0b3J5IjpbMTAyNDU0OTE4MSw1OTIwNzI5NywtOTY2Mj
 AwOTY3LC0xODU1MTg1NTQ4LC00Mjk3NDM4MTcsLTUwNzY5Njgw
 Nyw2MTEzNjMwMDcsLTM2MDY4Njc4NSwtMTIwODMyMjkwMyw3OD
 kwMzI4LDMxMDgzNDQ3OSw0MTk2MDQ2MywxODk4MzU0OTg3LDgy
