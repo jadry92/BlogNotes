@@ -29,7 +29,7 @@ The first thing that we have to now about a Regex is that each character has a s
 If my string is `hola` and the Regex is `.` the result will be ==`hola`==.
 Where all the string with each letter making matched with the Regex.
 
-The basic CheatSheets that we should have in mind to read an creat our .
+The basic CheatSheets that we should have in mind to read an creat our own Regex.
 
 ##### Class:
 ``` 
@@ -49,8 +49,8 @@ $ -> end of the line
 ? -> zero or one
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzgyODgzNTU2LDYxMTM2MzAwNywtMzYwNj
-g2Nzg1LC0xMjA4MzIyOTAzLDc4OTAzMjgsMzEwODM0NDc5LDQx
-OTYwNDYzLDE4OTgzNTQ5ODcsODI0OTY3MTgwLC0zNTM2OTU0OT
-UsLTYwNTExOTEwNF19
+eyJoaXN0b3J5IjpbMTIwMjExMTUyNSw2MTEzNjMwMDcsLTM2MD
+Y4Njc4NSwtMTIwODMyMjkwMyw3ODkwMzI4LDMxMDgzNDQ3OSw0
+MTk2MDQ2MywxODk4MzU0OTg3LDgyNDk2NzE4MCwtMzUzNjk1ND
+k1LC02MDUxMTkxMDRdfQ==
 -->
