@@ -40,7 +40,7 @@ The basics classes are in the next  CheatSheets. We should have in mind all of i
 ### Basics Class:
 ```
 . -> whatever caracter
-\w - > represents all words,
+\w - > represents all lowercase and uppercase words, digits and '_'
 \d - > represents all digits
 \s - > spaces in blank
 ```
@@ -82,9 +82,9 @@ where:\
 $ -> end of the line
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAyNDU0OTE4MSw1OTIwNzI5NywtOTY2Mj
-AwOTY3LC0xODU1MTg1NTQ4LC00Mjk3NDM4MTcsLTUwNzY5Njgw
-Nyw2MTEzNjMwMDcsLTM2MDY4Njc4NSwtMTIwODMyMjkwMyw3OD
-kwMzI4LDMxMDgzNDQ3OSw0MTk2MDQ2MywxODk4MzU0OTg3LDgy
-NDk2NzE4MCwtMzUzNjk1NDk1LC02MDUxMTkxMDRdfQ==
+eyJoaXN0b3J5IjpbLTE0NzUyOTE2MjUsNTkyMDcyOTcsLTk2Nj
+IwMDk2NywtMTg1NTE4NTU0OCwtNDI5NzQzODE3LC01MDc2OTY4
+MDcsNjExMzYzMDA3LC0zNjA2ODY3ODUsLTEyMDgzMjI5MDMsNz
+g5MDMyOCwzMTA4MzQ0NzksNDE5NjA0NjMsMTg5ODM1NDk4Nyw4
+MjQ5NjcxODAsLTM1MzY5NTQ5NSwtNjA1MTE5MTA0XX0=
 -->
