@@ -31,7 +31,7 @@ The first thing that we have to know about Regexes is that each character or "Cl
 
 [`hola`] - >  [`.`] - >  [`h`] [`o`] [`l`] [`a`] \
 where:\
-[**input**] - > [**Filter**] - > [**Result**]
+[**input**] - > [**Regex**] - > [**Result**]
 
 As we can see each letter making matched with the Regex.
 
@@ -56,7 +56,7 @@ Also we can create our classes using `[]`
 
 [`hola`] - >  [`[oa]`] - >  [`o`] [`l`] \
 where:\
-[**input**] - > [**Filter**] - > [**Result**]
+[**input**] - > [**Regex**] - > [**Result**]
 
 And we can repeat class using the counters. There are general counters and specific.
 ###  General Counters:
@@ -72,9 +72,9 @@ And we can repeat class using the counters. There are general counters and speci
 ```
 #### Example 4:
 
-[`hola`] - >  [`.`] - >  [`o`] [`l`] \
+[`hola=hi`] - >  [`\w{2,3}`] - >  [`o`] [`l`] \
 where:\
-[**input**] - > [**Filter**] - > [**Result**]
+[**input**] - > [**Regex**] - > [**Result**]
 
 ###  Extras:
 ```
@@ -82,9 +82,9 @@ where:\
 $ -> end of the line
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MTMzMjkyNTQsNTkyMDcyOTcsLTk2Nj
-IwMDk2NywtMTg1NTE4NTU0OCwtNDI5NzQzODE3LC01MDc2OTY4
-MDcsNjExMzYzMDA3LC0zNjA2ODY3ODUsLTEyMDgzMjI5MDMsNz
-g5MDMyOCwzMTA4MzQ0NzksNDE5NjA0NjMsMTg5ODM1NDk4Nyw4
-MjQ5NjcxODAsLTM1MzY5NTQ5NSwtNjA1MTE5MTA0XX0=
+eyJoaXN0b3J5IjpbMTc3MDkyMDA4Myw1OTIwNzI5NywtOTY2Mj
+AwOTY3LC0xODU1MTg1NTQ4LC00Mjk3NDM4MTcsLTUwNzY5Njgw
+Nyw2MTEzNjMwMDcsLTM2MDY4Njc4NSwtMTIwODMyMjkwMyw3OD
+kwMzI4LDMxMDgzNDQ3OSw0MTk2MDQ2MywxODk4MzU0OTg3LDgy
+NDk2NzE4MCwtMzUzNjk1NDk1LC02MDUxMTkxMDRdfQ==
 -->
