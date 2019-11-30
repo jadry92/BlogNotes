@@ -23,7 +23,8 @@ We would find that:
 
 But what does it mean all those weird characters? :unamused: :expressionless:
 
-The first thing that we have to now about Regexes is that each character or "Class" has a specific meaning. For example, the “.” class means whatever character.
+The first thing that we have to know about Regexes is that each character or "Class" has a specific meaning. For example, the “.” class means whatever character.
+
 ### Example 2:
 
 [`hola`] - >  [`.`] - >  [`h`] [`o`] [`l`] [`a`]
@@ -53,9 +54,9 @@ Where `[]` are used to create a spe
 ? -> zero or one
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MDgzODg2NTIsLTE4NTUxODU1NDgsLT
-QyOTc0MzgxNywtNTA3Njk2ODA3LDYxMTM2MzAwNywtMzYwNjg2
-Nzg1LC0xMjA4MzIyOTAzLDc4OTAzMjgsMzEwODM0NDc5LDQxOT
-YwNDYzLDE4OTgzNTQ5ODcsODI0OTY3MTgwLC0zNTM2OTU0OTUs
-LTYwNTExOTEwNF19
+eyJoaXN0b3J5IjpbMjc4MTEwNDQxLC0xODU1MTg1NTQ4LC00Mj
+k3NDM4MTcsLTUwNzY5NjgwNyw2MTEzNjMwMDcsLTM2MDY4Njc4
+NSwtMTIwODMyMjkwMyw3ODkwMzI4LDMxMDgzNDQ3OSw0MTk2MD
+Q2MywxODk4MzU0OTg3LDgyNDk2NzE4MCwtMzUzNjk1NDk1LC02
+MDUxMTkxMDRdfQ==
 -->
