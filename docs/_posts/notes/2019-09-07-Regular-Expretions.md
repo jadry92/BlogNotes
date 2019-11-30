@@ -29,8 +29,10 @@ The first thing that we have to know about Regexes is that each character or "Cl
 
 #### Example 2:
 
-[`hola`] - >  [`.`] - >  [`h`] [`o`] [`l`] [`a`] \
-where:\
+[`hola`] - >  [`.`] - >  [`h`] [`o`] [`l`] [`a`] 
+
+where:
+
 [**input**] - > [**Regex**] - > [**Result**]
 
 As we can see each letter making matched with the Regex.
@@ -54,8 +56,10 @@ Also we can create our classes using `[]`
 
 #### Example 3:
 
-[`hola`] - >  [`[oa]`] - >  [`o`] [`l`] \
-where:\
+[`hola`] - >  [`[oa]`] - >  [`o`] [`l`] 
+
+where:
+
 [**input**] - > [**Regex**] - > [**Result**]
 
 And we can repeat class using the counters. There are general counters and specific.
@@ -73,7 +77,9 @@ And we can repeat class using the counters. There are general counters and speci
 #### Example 4:
 
 [`hola=hi`] - >  [`\w{2,3}`] - >  [`hol`] [`hi`] 
-where:\
+
+where:
+
 [**input**] - > [**Regex**] - > [**Result**]
 
 ###  Extras:
@@ -83,7 +89,7 @@ $ -> end of the line
 [^] -> invers class
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU1MDUwNzE2MywtMTQ3NTI5MTYyNSw1OT
+eyJoaXN0b3J5IjpbMTQ3NjY5MTkxMywtMTQ3NTI5MTYyNSw1OT
 IwNzI5NywtOTY2MjAwOTY3LC0xODU1MTg1NTQ4LC00Mjk3NDM4
 MTcsLTUwNzY5NjgwNyw2MTEzNjMwMDcsLTM2MDY4Njc4NSwtMT
 IwODMyMjkwMyw3ODkwMzI4LDMxMDgzNDQ3OSw0MTk2MDQ2Mywx
