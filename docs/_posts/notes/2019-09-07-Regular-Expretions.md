@@ -25,6 +25,12 @@ But what does it mean all those weird characters? :unamused: :expressionless:
 
 The first thing that we have to now about a Regex is that each character has a specific meaning that. For example, "`.`" means whatever character.
 ### Example 2:
+```mermaid
+graph LR
+A[`hola`] --> B
+B --> C[==`hola`==]
+
+```
 "`hola`" "`.`"  "==`hola`=="
 
 Where all the string with each letter making matched with the Regex.
@@ -50,7 +56,7 @@ Where `[]` are used to create a spe
 ? -> zero or one
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MDI5MjUwMzYsNjExMzYzMDA3LC0zNj
+eyJoaXN0b3J5IjpbLTEwODA2NjM5NzcsNjExMzYzMDA3LC0zNj
 A2ODY3ODUsLTEyMDgzMjI5MDMsNzg5MDMyOCwzMTA4MzQ0Nzks
 NDE5NjA0NjMsMTg5ODM1NDk4Nyw4MjQ5NjcxODAsLTM1MzY5NT
 Q5NSwtNjA1MTE5MTA0XX0=
