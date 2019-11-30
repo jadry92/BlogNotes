@@ -4,7 +4,10 @@ title: Regular Expressions
 category: Notes
 ---
 
-"REGEX or Regular Expressions are the key tool that all Developer shoud have in theri pokect" .
+"Regular Expressions are the key tools that all Developer should have in their pocket", it's the phrase with the teacher Alberto Alcocer repat constantly in the course in Platzi.
+
+A Regex (Regular Expression) is a patter which is possible to filter strings without using a lot of resources.
+Example:.
 
 ```
 . -> whatever ca racter
@@ -18,5 +21,6 @@ category: Notes
 ? -> zero or one
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM1MzY5NTQ5NSwtNjA1MTE5MTA0XX0=
+eyJoaXN0b3J5IjpbMjA4MjIxMzM1OCwtMzUzNjk1NDk1LC02MD
+UxMTkxMDRdfQ==
 -->
