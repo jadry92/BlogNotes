@@ -4,7 +4,7 @@ title: Regular Expressions
 category: Notes
 ---
 
-
+REGEX or Regular Expressions are the key tool that all Developer shoul has
 
 ```
 . -> whatever ca racter
@@ -18,5 +18,5 @@ category: Notes
 ? -> zero or one
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYwNTExOTEwNF19
+eyJoaXN0b3J5IjpbLTE2ODQzNzM1NzIsLTYwNTExOTEwNF19
 -->
