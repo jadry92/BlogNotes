@@ -27,9 +27,8 @@ The first thing that we have to now about a Regex is that each character has a s
 ### Example 2:
 ```mermaid
 graph LR
-A[`hola`] --> B
-B --> C[==`hola`==]
-
+A[hola] --> B[.]
+B --> C[`hola`]
 ```
 "`hola`" "`.`"  "==`hola`=="
 
@@ -56,8 +55,8 @@ Where `[]` are used to create a spe
 ? -> zero or one
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwODA2NjM5NzcsNjExMzYzMDA3LC0zNj
-A2ODY3ODUsLTEyMDgzMjI5MDMsNzg5MDMyOCwzMTA4MzQ0Nzks
-NDE5NjA0NjMsMTg5ODM1NDk4Nyw4MjQ5NjcxODAsLTM1MzY5NT
-Q5NSwtNjA1MTE5MTA0XX0=
+eyJoaXN0b3J5IjpbLTQ2ODk2ODMzOSw2MTEzNjMwMDcsLTM2MD
+Y4Njc4NSwtMTIwODMyMjkwMyw3ODkwMzI4LDMxMDgzNDQ3OSw0
+MTk2MDQ2MywxODk4MzU0OTg3LDgyNDk2NzE4MCwtMzUzNjk1ND
+k1LC02MDUxMTkxMDRdfQ==
 -->
