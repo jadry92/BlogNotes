@@ -27,9 +27,9 @@ The first thing that we have to know about Regexes is that each character or "Cl
 
 ### Example 2:
 
-[`hola`] - >  [`.`] - >  [`h`] [`o`] [`l`] [`a`] 
-where:
-[**input**] - > [**Filter**] - > [**Result**] 
+[`hola`] - >  [`.`] - >  [`h`] [`o`] [`l`] [`a`] \
+where:\
+[**input**] - > [**Filter**] - > [**Result**] \
 
 As we can see each letter making matched with the Regex.
 
@@ -54,7 +54,7 @@ Where `[]` are used to create a spe
 ? -> zero or one
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA4NTYwMDgwNywtMTg1NTE4NTU0OCwtND
+eyJoaXN0b3J5IjpbMjEzMDM1ODA1NSwtMTg1NTE4NTU0OCwtND
 I5NzQzODE3LC01MDc2OTY4MDcsNjExMzYzMDA3LC0zNjA2ODY3
 ODUsLTEyMDgzMjI5MDMsNzg5MDMyOCwzMTA4MzQ0NzksNDE5Nj
 A0NjMsMTg5ODM1NDk4Nyw4MjQ5NjcxODAsLTM1MzY5NTQ5NSwt
