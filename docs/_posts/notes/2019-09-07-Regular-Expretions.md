@@ -24,19 +24,23 @@ We would find that:
 But what does it mean all those weird characters? :unamused: :expressionless:
 Before to show all meaning, I need to show you the basic CheatSheets and how to use.
 
-```
+##### Class:
+``` 
 . -> whatever ca racter
 \w - > find any conjunct that looks like as word
 \d - > find all the digits
 \s - > spaces in blank
 [0-9] ~ \d
 [0-9a-zA-Z_] ~ \w
+```
+##### Counters:
+```
 .* -> greedy all
 + -> one or more
 ? -> zero or one
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMzcyMzMxNDIsNzg5MDMyOCwzMTA4Mz
-Q0NzksNDE5NjA0NjMsMTg5ODM1NDk4Nyw4MjQ5NjcxODAsLTM1
-MzY5NTQ5NSwtNjA1MTE5MTA0XX0=
+eyJoaXN0b3J5IjpbMTkwNzIxOTg0OSw3ODkwMzI4LDMxMDgzND
+Q3OSw0MTk2MDQ2MywxODk4MzU0OTg3LDgyNDk2NzE4MCwtMzUz
+Njk1NDk1LC02MDUxMTkxMDRdfQ==
 -->
