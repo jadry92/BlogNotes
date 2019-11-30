@@ -25,7 +25,8 @@ But what does it mean all those weird characters? :unamused: :expressionless:
 
 The first thing that we have to now about a Regex is that each character has a specific meaning that. For example, "`.`" means whatever character.
 ### Example 2:
-If my string is "`hola`" and the Regex is "`.`" the result will be "==`hola`==".
+"`hola`" "`.`"  "==`hola`=="
+
 Where all the string with each letter making matched with the Regex.
 
 The basic CheatSheets that we should have in mind to read and create our Regex.
@@ -49,8 +50,8 @@ Where `[]` are used to create a spe
 ? -> zero or one
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjc1Mzc2NDU0LDYxMTM2MzAwNywtMzYwNj
-g2Nzg1LC0xMjA4MzIyOTAzLDc4OTAzMjgsMzEwODM0NDc5LDQx
-OTYwNDYzLDE4OTgzNTQ5ODcsODI0OTY3MTgwLC0zNTM2OTU0OT
-UsLTYwNTExOTEwNF19
+eyJoaXN0b3J5IjpbLTE1MDI5MjUwMzYsNjExMzYzMDA3LC0zNj
+A2ODY3ODUsLTEyMDgzMjI5MDMsNzg5MDMyOCwzMTA4MzQ0Nzks
+NDE5NjA0NjMsMTg5ODM1NDk4Nyw4MjQ5NjcxODAsLTM1MzY5NT
+Q5NSwtNjA1MTE5MTA0XX0=
 -->
