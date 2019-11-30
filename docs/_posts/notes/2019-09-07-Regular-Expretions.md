@@ -19,7 +19,7 @@ With the next Regex:
 ```
 We would find that:
 
-![example 1]({{ "/assets/img/notes/2019-09-07-Regular-Expretions/example.png" | relative_url }})
+![example 1]({{ "/assets/img/posts/notes/2019-09-07-Regular-Expretions/example.png" | relative_url }})
 
 But what does it mean all those weird characters? :unamused: :expressionless:
 
@@ -55,8 +55,8 @@ Where `[]` are used to create a spe
 ? -> zero or one
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MjIwNTE3NDcsNjExMzYzMDA3LC0zNj
-A2ODY3ODUsLTEyMDgzMjI5MDMsNzg5MDMyOCwzMTA4MzQ0Nzks
-NDE5NjA0NjMsMTg5ODM1NDk4Nyw4MjQ5NjcxODAsLTM1MzY5NT
-Q5NSwtNjA1MTE5MTA0XX0=
+eyJoaXN0b3J5IjpbLTUwNzY5NjgwNyw2MTEzNjMwMDcsLTM2MD
+Y4Njc4NSwtMTIwODMyMjkwMyw3ODkwMzI4LDMxMDgzNDQ3OSw0
+MTk2MDQ2MywxODk4MzU0OTg3LDgyNDk2NzE4MCwtMzUzNjk1ND
+k1LC02MDUxMTkxMDRdfQ==
 -->
