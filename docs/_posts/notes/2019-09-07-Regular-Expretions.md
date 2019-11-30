@@ -21,9 +21,8 @@ We would find that:
 
 ![example 1]()
 
-But what does it mean? :unamused: :expressionless:
-
-F
+But what does it mean all those weird characters? :unamused: :expressionless:
+Before to show the all meaing I'll show you the basic cheat 
 
 
 
@@ -40,7 +39,7 @@ F
 ? -> zero or one
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk3MTMyMDYzNSwzMTA4MzQ0NzksNDE5Nj
-A0NjMsMTg5ODM1NDk4Nyw4MjQ5NjcxODAsLTM1MzY5NTQ5NSwt
-NjA1MTE5MTA0XX0=
+eyJoaXN0b3J5IjpbLTE1NzM0NjM5MjAsMzEwODM0NDc5LDQxOT
+YwNDYzLDE4OTgzNTQ5ODcsODI0OTY3MTgwLC0zNTM2OTU0OTUs
+LTYwNTExOTEwNF19
 -->
