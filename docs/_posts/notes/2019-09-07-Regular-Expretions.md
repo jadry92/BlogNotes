@@ -8,9 +8,9 @@ category: Notes
 
 A Regex (Regular Expression) is a patter which is possible to filter strings without using a lot of resources. Regexes are commonly used to filter URL, phone numbers, emails and so on:
 Example:
-If we would like to know if this is a valid email 
+If we would like to know if the next email is a valid for a registered in a specific platform. 
 ```
-blue-keep@windous.fail
+email : blue-keep@windous.fail
 ```
 
 
@@ -27,6 +27,6 @@ blue-keep@windous.fail
 ? -> zero or one
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg4NzgzMzgwMiw4MjQ5NjcxODAsLTM1Mz
+eyJoaXN0b3J5IjpbMTg5ODM1NDk4Nyw4MjQ5NjcxODAsLTM1Mz
 Y5NTQ5NSwtNjA1MTE5MTA0XX0=
 -->
