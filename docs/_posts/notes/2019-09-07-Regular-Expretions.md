@@ -58,7 +58,7 @@ Also we can create our classes using `[]`
 where:\
 [**input**] - > [**Filter**] - > [**Result**]
 
-And we can repiet class usin the coutres
+And we can repiet class using the counters. There are general counters and spesific
 ####  General Counters:
 ```
 * -> zero or more (greedy)
@@ -72,7 +72,7 @@ And we can repiet class usin the coutres
 $ -> end of the line
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgwNTE2MDIyNCwtOTY2MjAwOTY3LC0xOD
+eyJoaXN0b3J5IjpbMTM5MDgwODQ5MSwtOTY2MjAwOTY3LC0xOD
 U1MTg1NTQ4LC00Mjk3NDM4MTcsLTUwNzY5NjgwNyw2MTEzNjMw
 MDcsLTM2MDY4Njc4NSwtMTIwODMyMjkwMyw3ODkwMzI4LDMxMD
 gzNDQ3OSw0MTk2MDQ2MywxODk4MzU0OTg3LDgyNDk2NzE4MCwt
