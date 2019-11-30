@@ -24,8 +24,8 @@ We would find that:
 But what does it mean all those weird characters? :unamused: :expressionless:
 
 First thing that we has to now about a Regex is that each caracter has a spesific meaning. For example, "`.`" means whaever caracter, thats mean:
-If my string is `hola` and the Regex is `.` the restul will be
-**`hola**
+If my string is `hola` and the Regex is `.` the restul will be:
+==`hola`== w
 Before to show all meaning, I need to show you the basic CheatSheets and how to use.
 
 ##### Class:
@@ -46,8 +46,8 @@ $ -> end of the line
 ? -> zero or one
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTYxMTYzNDk2LC0zNjA2ODY3ODUsLTEyMD
-gzMjI5MDMsNzg5MDMyOCwzMTA4MzQ0NzksNDE5NjA0NjMsMTg5
-ODM1NDk4Nyw4MjQ5NjcxODAsLTM1MzY5NTQ5NSwtNjA1MTE5MT
-A0XX0=
+eyJoaXN0b3J5IjpbLTEzMjM2NjUyMTEsLTM2MDY4Njc4NSwtMT
+IwODMyMjkwMyw3ODkwMzI4LDMxMDgzNDQ3OSw0MTk2MDQ2Mywx
+ODk4MzU0OTg3LDgyNDk2NzE4MCwtMzUzNjk1NDk1LC02MDUxMT
+kxMDRdfQ==
 -->
