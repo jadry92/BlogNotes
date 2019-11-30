@@ -30,7 +30,7 @@ The first thing that we have to now about a Regex is that each character has a s
 [**input**] - > [**Filter**] - > [**Result**] 
 
 
-Where all the string with each letter making matched with the Regex.
+As a resultthe string with each letter making matched with the Regex.
 
 The basic CheatSheets that we should have in mind to read and create our Regex.
 
@@ -53,7 +53,7 @@ Where `[]` are used to create a spe
 ? -> zero or one
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwODAyOTI1MSwtNTA3Njk2ODA3LDYxMT
+eyJoaXN0b3J5IjpbLTQyOTc0MzgxNywtNTA3Njk2ODA3LDYxMT
 M2MzAwNywtMzYwNjg2Nzg1LC0xMjA4MzIyOTAzLDc4OTAzMjgs
 MzEwODM0NDc5LDQxOTYwNDYzLDE4OTgzNTQ5ODcsODI0OTY3MT
 gwLC0zNTM2OTU0OTUsLTYwNTExOTEwNF19
