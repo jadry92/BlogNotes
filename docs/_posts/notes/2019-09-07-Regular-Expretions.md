@@ -22,6 +22,8 @@ We would find that:
 ![example 1]()
 
 But what does it mean all those weird characters? :unamused: :expressionless:
+
+First thing that we has to now about a Regex 
 Before to show all meaning, I need to show you the basic CheatSheets and how to use.
 
 ##### Class:
@@ -42,7 +44,7 @@ $ -> end of the line
 ? -> zero or one
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk3NTA4MzQ2NSwtMTIwODMyMjkwMyw3OD
+eyJoaXN0b3J5IjpbMTU2MzUxOTE1MiwtMTIwODMyMjkwMyw3OD
 kwMzI4LDMxMDgzNDQ3OSw0MTk2MDQ2MywxODk4MzU0OTg3LDgy
 NDk2NzE4MCwtMzUzNjk1NDk1LC02MDUxMTkxMDRdfQ==
 -->
