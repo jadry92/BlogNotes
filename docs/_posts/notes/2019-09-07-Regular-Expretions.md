@@ -45,23 +45,27 @@ The basics classes are in the next  CheatSheets. We should have in mind all of i
 \s - > spaces in blank
 
 ```
-And we can create our classes using `[]` 
+Also we can create our classes using `[]` 
 #### Costume Classes:
 ``` 
 [0-9] ~ \d
 [0-9a-zA-Z_] ~ \w
 ```
-#### Counters:
+And we can repiet class qi
+####  General Counters:
 ```
-* -> greedy
+* -> zero or more (greedy)
 + -> one or more
 ? -> zero or one
 ```
 
+####  Extra:
+```
 ^ - > beging of the line
 $ -> end of the line
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMDEwOTcwNTcsLTk2NjIwMDk2NywtMT
+eyJoaXN0b3J5IjpbLTE1ODYxMTgxODIsLTk2NjIwMDk2NywtMT
 g1NTE4NTU0OCwtNDI5NzQzODE3LC01MDc2OTY4MDcsNjExMzYz
 MDA3LC0zNjA2ODY3ODUsLTEyMDgzMjI5MDMsNzg5MDMyOCwzMT
 A4MzQ0NzksNDE5NjA0NjMsMTg5ODM1NDk4Nyw4MjQ5NjcxODAs
