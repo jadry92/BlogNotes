@@ -68,7 +68,7 @@ And we can repeat class using the counters. There are general counters and speci
 
 ####  Spesific Counters:
 ```
-{A,B}->  to s or more (greedy)
+{A,B}-> A to B elemts
 ```
 
 ####  Extra:
@@ -77,9 +77,9 @@ And we can repeat class using the counters. There are general counters and speci
 $ -> end of the line
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjQ2MDU3Mzg5LDU5MjA3Mjk3LC05NjYyMD
-A5NjcsLTE4NTUxODU1NDgsLTQyOTc0MzgxNywtNTA3Njk2ODA3
-LDYxMTM2MzAwNywtMzYwNjg2Nzg1LC0xMjA4MzIyOTAzLDc4OT
-AzMjgsMzEwODM0NDc5LDQxOTYwNDYzLDE4OTgzNTQ5ODcsODI0
-OTY3MTgwLC0zNTM2OTU0OTUsLTYwNTExOTEwNF19
+eyJoaXN0b3J5IjpbLTE1NTkzODk0ODQsNTkyMDcyOTcsLTk2Nj
+IwMDk2NywtMTg1NTE4NTU0OCwtNDI5NzQzODE3LC01MDc2OTY4
+MDcsNjExMzYzMDA3LC0zNjA2ODY3ODUsLTEyMDgzMjI5MDMsNz
+g5MDMyOCwzMTA4MzQ0NzksNDE5NjA0NjMsMTg5ODM1NDk4Nyw4
+MjQ5NjcxODAsLTM1MzY5NTQ5NSwtNjA1MTE5MTA0XX0=
 -->
