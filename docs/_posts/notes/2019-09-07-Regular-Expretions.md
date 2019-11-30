@@ -35,12 +35,12 @@ Before to show all meaning, I need to show you the basic CheatSheets and how to 
 ```
 ##### Counters:
 ```
-.* -> greedy all
+* -> greedy
 + -> one or more
 ? -> zero or one
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMDgzMjI5MDMsNzg5MDMyOCwzMTA4Mz
-Q0NzksNDE5NjA0NjMsMTg5ODM1NDk4Nyw4MjQ5NjcxODAsLTM1
-MzY5NTQ5NSwtNjA1MTE5MTA0XX0=
+eyJoaXN0b3J5IjpbLTQ0MzAzMzA5MCwtMTIwODMyMjkwMyw3OD
+kwMzI4LDMxMDgzNDQ3OSw0MTk2MDQ2MywxODk4MzU0OTg3LDgy
+NDk2NzE4MCwtMzUzNjk1NDk1LC02MDUxMTkxMDRdfQ==
 -->
