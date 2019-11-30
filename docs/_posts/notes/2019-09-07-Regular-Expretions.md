@@ -21,7 +21,7 @@ We would find that:
 
 ![example 1]()
 
-But what that is mean? :unamused: :expressionless:
+But what does it mean? :unamused: :expressionless:
 
 F
 
@@ -40,7 +40,7 @@ F
 ? -> zero or one
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTI5NTg0MDIwLDMxMDgzNDQ3OSw0MTk2MD
-Q2MywxODk4MzU0OTg3LDgyNDk2NzE4MCwtMzUzNjk1NDk1LC02
-MDUxMTkxMDRdfQ==
+eyJoaXN0b3J5IjpbLTk3MTMyMDYzNSwzMTA4MzQ0NzksNDE5Nj
+A0NjMsMTg5ODM1NDk4Nyw4MjQ5NjcxODAsLTM1MzY5NTQ5NSwt
+NjA1MTE5MTA0XX0=
 -->
