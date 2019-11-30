@@ -27,13 +27,9 @@ The first thing that we have to now about a Regex is that each character has a s
 ### Example 2:
 
 [`hola`] - >  [`.`] - >  [`h`] [`o`] [`l`] [`a`]
-whre
+where:
 [**input**] - > [**Filter**] - > [**Result**] 
-
-
-As a resultthe string with each letter making matched with the Regex.
-
-The basic CheatSheets that we should have in mind to read and create our Regex.
+	
 
 #### Class:
 ```
@@ -54,9 +50,9 @@ Where `[]` are used to create a spe
 ? -> zero or one
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEyNzQxMDE1OSwtNDI5NzQzODE3LC01MD
-c2OTY4MDcsNjExMzYzMDA3LC0zNjA2ODY3ODUsLTEyMDgzMjI5
-MDMsNzg5MDMyOCwzMTA4MzQ0NzksNDE5NjA0NjMsMTg5ODM1ND
-k4Nyw4MjQ5NjcxODAsLTM1MzY5NTQ5NSwtNjA1MTE5MTA0XX0=
+eyJoaXN0b3J5IjpbLTE4NTUxODU1NDgsLTQyOTc0MzgxNywtNT
+A3Njk2ODA3LDYxMTM2MzAwNywtMzYwNjg2Nzg1LC0xMjA4MzIy
+OTAzLDc4OTAzMjgsMzEwODM0NDc5LDQxOTYwNDYzLDE4OTgzNT
+Q5ODcsODI0OTY3MTgwLC0zNTM2OTU0OTUsLTYwNTExOTEwNF19
 
 -->
