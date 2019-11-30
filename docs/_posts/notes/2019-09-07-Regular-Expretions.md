@@ -72,7 +72,7 @@ And we can repeat class using the counters. There are general counters and speci
 ```
 #### Example 4:
 
-[`hola=hi`] - >  [`\w{2,3}`] - >  [`hol`] [`hi`] \
+[`hola=hi`] - >  [`\w{2,3}`] - >  [`hol`] [`hi`] 
 where:\
 [**input**] - > [**Regex**] - > [**Result**]
 
@@ -83,7 +83,7 @@ $ -> end of the line
 [^] -> invers class
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEzNzY4Njk0OSwtMTQ3NTI5MTYyNSw1OT
+eyJoaXN0b3J5IjpbLTU1MDUwNzE2MywtMTQ3NTI5MTYyNSw1OT
 IwNzI5NywtOTY2MjAwOTY3LC0xODU1MTg1NTQ4LC00Mjk3NDM4
 MTcsLTUwNzY5NjgwNyw2MTEzNjMwMDcsLTM2MDY4Njc4NSwtMT
 IwODMyMjkwMyw3ODkwMzI4LDMxMDgzNDQ3OSw0MTk2MDQ2Mywx
