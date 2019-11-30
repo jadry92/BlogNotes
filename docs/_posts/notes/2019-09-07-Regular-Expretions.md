@@ -58,8 +58,15 @@ Also we can create our classes using `[]`
 where:\
 [**input**] - > [**Filter**] - > [**Result**]
 
-And we can repiet class using the counters. There are general counters and spesific
+And we can repeat class using the counters. There are general counters and specific.
 ####  General Counters:
+```
+* -> zero or more (greedy)
++ -> one or more
+? -> zero or one
+```
+
+####  Spesific Counters:
 ```
 * -> zero or more (greedy)
 + -> one or more
@@ -72,9 +79,9 @@ And we can repiet class using the counters. There are general counters and spesi
 $ -> end of the line
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM5MDgwODQ5MSwtOTY2MjAwOTY3LC0xOD
-U1MTg1NTQ4LC00Mjk3NDM4MTcsLTUwNzY5NjgwNyw2MTEzNjMw
-MDcsLTM2MDY4Njc4NSwtMTIwODMyMjkwMyw3ODkwMzI4LDMxMD
-gzNDQ3OSw0MTk2MDQ2MywxODk4MzU0OTg3LDgyNDk2NzE4MCwt
-MzUzNjk1NDk1LC02MDUxMTkxMDRdfQ==
+eyJoaXN0b3J5IjpbNTkyMDcyOTcsLTk2NjIwMDk2NywtMTg1NT
+E4NTU0OCwtNDI5NzQzODE3LC01MDc2OTY4MDcsNjExMzYzMDA3
+LC0zNjA2ODY3ODUsLTEyMDgzMjI5MDMsNzg5MDMyOCwzMTA4Mz
+Q0NzksNDE5NjA0NjMsMTg5ODM1NDk4Nyw4MjQ5NjcxODAsLTM1
+MzY5NTQ5NSwtNjA1MTE5MTA0XX0=
 -->
