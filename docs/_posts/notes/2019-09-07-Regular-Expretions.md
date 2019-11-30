@@ -4,6 +4,8 @@ title: Regular Expressions
 category: Notes
 ---
 
+
+
 ```
 . -> whatever ca racter
 \w - > find any conjunct that looks like as word
@@ -15,3 +17,6 @@ category: Notes
 + -> one or more
 ? -> zero or one
 ```
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTYwNTExOTEwNF19
+-->
