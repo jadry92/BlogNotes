@@ -26,7 +26,7 @@ Before to show all meaning, I need to show you the basic CheatSheets and how to 
 
 ##### Class:
 ``` 
-. -> whatever ca racter
+. -> whatever caracter
 \w - > find any conjunct that looks like as word
 \d - > find all the digits
 \s - > spaces in blank
@@ -40,7 +40,7 @@ Before to show all meaning, I need to show you the basic CheatSheets and how to 
 ? -> zero or one
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkwNzIxOTg0OSw3ODkwMzI4LDMxMDgzND
-Q3OSw0MTk2MDQ2MywxODk4MzU0OTg3LDgyNDk2NzE4MCwtMzUz
-Njk1NDk1LC02MDUxMTkxMDRdfQ==
+eyJoaXN0b3J5IjpbLTEyMDgzMjI5MDMsNzg5MDMyOCwzMTA4Mz
+Q0NzksNDE5NjA0NjMsMTg5ODM1NDk4Nyw4MjQ5NjcxODAsLTM1
+MzY5NTQ5NSwtNjA1MTE5MTA0XX0=
 -->
