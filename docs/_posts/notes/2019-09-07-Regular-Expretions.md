@@ -26,7 +26,8 @@ But what does it mean all those weird characters? :unamused: :expressionless:
 The first thing that we have to now about a Regex is that each character has a specific meaning that. For example, "`.`" means whatever character.
 ### Example 2:
 
-"`hola`" - >  "`.`" - >  "`h` `o` `l` `a`"
+[`hola`] - >  [`.`] - >  [`h`] [`o`] [`l`] [`a`]
+whre
 [**input**] - > [**Filter**] - > [**Result**] 
 
 
@@ -53,8 +54,9 @@ Where `[]` are used to create a spe
 ? -> zero or one
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQyOTc0MzgxNywtNTA3Njk2ODA3LDYxMT
-M2MzAwNywtMzYwNjg2Nzg1LC0xMjA4MzIyOTAzLDc4OTAzMjgs
-MzEwODM0NDc5LDQxOTYwNDYzLDE4OTgzNTQ5ODcsODI0OTY3MT
-gwLC0zNTM2OTU0OTUsLTYwNTExOTEwNF19
+eyJoaXN0b3J5IjpbMjEyNzQxMDE1OSwtNDI5NzQzODE3LC01MD
+c2OTY4MDcsNjExMzYzMDA3LC0zNjA2ODY3ODUsLTEyMDgzMjI5
+MDMsNzg5MDMyOCwzMTA4MzQ0NzksNDE5NjA0NjMsMTg5ODM1ND
+k4Nyw4MjQ5NjcxODAsLTM1MzY5NTQ5NSwtNjA1MTE5MTA0XX0=
+
 -->
