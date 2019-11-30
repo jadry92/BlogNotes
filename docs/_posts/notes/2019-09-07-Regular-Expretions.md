@@ -23,13 +23,16 @@ We would find that:
 
 But what does it mean all those weird characters? :unamused: :expressionless:
 
-The first thing that we have to now about a Regex is that each character has a specific meaning that. For example, "`.`" means whatever character.
+The first thing that we have to now about a Regex is that each character or "Class" has a specific meaning that. For example, the “.” class means whatever character.
 ### Example 2:
 
 [`hola`] - >  [`.`] - >  [`h`] [`o`] [`l`] [`a`]
 where:
 [**input**] - > [**Filter**] - > [**Result**] 
-	
+
+As we can see each letter making matched with the Regex.
+
+The basics classes are in the next  CheatSheets that we should have in mind to read and create our Regex.
 
 #### Class:
 ```
@@ -50,9 +53,9 @@ Where `[]` are used to create a spe
 ? -> zero or one
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NTUxODU1NDgsLTQyOTc0MzgxNywtNT
-A3Njk2ODA3LDYxMTM2MzAwNywtMzYwNjg2Nzg1LC0xMjA4MzIy
-OTAzLDc4OTAzMjgsMzEwODM0NDc5LDQxOTYwNDYzLDE4OTgzNT
-Q5ODcsODI0OTY3MTgwLC0zNTM2OTU0OTUsLTYwNTExOTEwNF19
-
+eyJoaXN0b3J5IjpbNDcyNTU0MTg0LC0xODU1MTg1NTQ4LC00Mj
+k3NDM4MTcsLTUwNzY5NjgwNyw2MTEzNjMwMDcsLTM2MDY4Njc4
+NSwtMTIwODMyMjkwMyw3ODkwMzI4LDMxMDgzNDQ3OSw0MTk2MD
+Q2MywxODk4MzU0OTg3LDgyNDk2NzE4MCwtMzUzNjk1NDk1LC02
+MDUxMTkxMDRdfQ==
 -->
