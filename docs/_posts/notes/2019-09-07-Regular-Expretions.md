@@ -31,8 +31,7 @@ Where all the string with each letter making matched with the Regex.
 
 The basic CheatSheets that we should have in mind to read and create our Regex.
 
-
-##### Class:
+#### Class:
 ``` 
 . -> whatever caracter
 \w - > find any conjunct that looks like as word
@@ -43,15 +42,16 @@ The basic CheatSheets that we should have in mind to read and create our Regex.
 ^ - > beging of the line
 $ -> end of the line
 ```
-##### Counters:
+Where `[]` are used to create a spe
+#### Counters:
 ```
 * -> greedy
 + -> one or more
 ? -> zero or one
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzg0ODgyNjA2LDYxMTM2MzAwNywtMzYwNj
-g2Nzg1LC0xMjA4MzIyOTAzLDc4OTAzMjgsMzEwODM0NDc5LDQx
-OTYwNDYzLDE4OTgzNTQ5ODcsODI0OTY3MTgwLC0zNTM2OTU0OT
-UsLTYwNTExOTEwNF19
+eyJoaXN0b3J5IjpbLTE2NDA5NjU5NDgsNjExMzYzMDA3LC0zNj
+A2ODY3ODUsLTEyMDgzMjI5MDMsNzg5MDMyOCwzMTA4MzQ0Nzks
+NDE5NjA0NjMsMTg5ODM1NDk4Nyw4MjQ5NjcxODAsLTM1MzY5NT
+Q5NSwtNjA1MTE5MTA0XX0=
 -->
