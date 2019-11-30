@@ -8,7 +8,7 @@ category: Notes
 
 A Regex (Regular Expression) is a patter which is possible to filter strings without using a lot of resources. Regexes are commonly used to filter URL, phone numbers, emails and so on.
 Example:
-If we would like to know if the next emails are valid for a registered in a specific platform. 
+If we would like to know if the next emails are valid for a registered in a specific platform.
 ```
 blue_keep@windous.fail
 asd@qwe@gmail.como
@@ -19,7 +19,7 @@ With the next Regex:
 ```
 We would find that:
 
-![example 1]()
+![example 1]({{ "/assets/img/notes/2019-09-07-Regular-Expretions/example.png" | relative_url }})
 
 But what does it mean all those weird characters? :unamused: :expressionless:
 
@@ -37,7 +37,7 @@ Where all the string with each letter making matched with the Regex.
 The basic CheatSheets that we should have in mind to read and create our Regex.
 
 #### Class:
-``` 
+```
 . -> whatever caracter
 \w - > find any conjunct that looks like as word
 \d - > find all the digits

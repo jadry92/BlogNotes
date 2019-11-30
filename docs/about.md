@@ -9,7 +9,7 @@ This blog is about my journey to build a career in the Technology industry.
 ### Author:
 
 <div class="personal-img">
-  <img src="{{ "assets/img/personal.jpeg" | relative_url }}" alt="Johan Suarez" style="%100">
+  <img src="{{ "assets/img/about/personal.jpeg" | relative_url }}" alt="Johan Suarez" style="%100">
 </div>
 
 
