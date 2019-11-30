@@ -27,7 +27,7 @@ The first thing that we have to know about Regexes is that each character or "Cl
 
 ### Example 2:
 
-[`hola`] - >  [`.`] - >  [`h`] [`o`] [`l`] [`a`]
+[`hola`] - >  [`.`] - >  [`h`] [`o`] [`l`] [`a`] 
 where:
 [**input**] - > [**Filter**] - > [**Result**] 
 
@@ -54,9 +54,9 @@ Where `[]` are used to create a spe
 ? -> zero or one
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjc4MTEwNDQxLC0xODU1MTg1NTQ4LC00Mj
-k3NDM4MTcsLTUwNzY5NjgwNyw2MTEzNjMwMDcsLTM2MDY4Njc4
-NSwtMTIwODMyMjkwMyw3ODkwMzI4LDMxMDgzNDQ3OSw0MTk2MD
-Q2MywxODk4MzU0OTg3LDgyNDk2NzE4MCwtMzUzNjk1NDk1LC02
-MDUxMTkxMDRdfQ==
+eyJoaXN0b3J5IjpbMTA4NTYwMDgwNywtMTg1NTE4NTU0OCwtND
+I5NzQzODE3LC01MDc2OTY4MDcsNjExMzYzMDA3LC0zNjA2ODY3
+ODUsLTEyMDgzMjI5MDMsNzg5MDMyOCwzMTA4MzQ0NzksNDE5Nj
+A0NjMsMTg5ODM1NDk4Nyw4MjQ5NjcxODAsLTM1MzY5NTQ5NSwt
+NjA1MTE5MTA0XX0=
 -->
