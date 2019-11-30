@@ -43,15 +43,22 @@ The basics classes are in the next  CheatSheets. We should have in mind all of i
 \w - > find any conjunct that looks like as word
 \d - > find all the digits
 \s - > spaces in blank
-
 ```
+
 Also we can create our classes using `[]` 
 #### Costume Classes:
 ``` 
 [0-9] ~ \d
 [0-9a-zA-Z_] ~ \w
 ```
-And we can repiet class qi
+
+### Example 3:
+
+[`hola`] - >  [`[oa]`] - >  [`o`] [`l`] \
+where:\
+[**input**] - > [**Filter**] - > [**Result**]
+
+And we can repiet class usin the coutres
 ####  General Counters:
 ```
 * -> zero or more (greedy)
@@ -65,9 +72,9 @@ And we can repiet class qi
 $ -> end of the line
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1ODYxMTgxODIsLTk2NjIwMDk2NywtMT
-g1NTE4NTU0OCwtNDI5NzQzODE3LC01MDc2OTY4MDcsNjExMzYz
-MDA3LC0zNjA2ODY3ODUsLTEyMDgzMjI5MDMsNzg5MDMyOCwzMT
-A4MzQ0NzksNDE5NjA0NjMsMTg5ODM1NDk4Nyw4MjQ5NjcxODAs
-LTM1MzY5NTQ5NSwtNjA1MTE5MTA0XX0=
+eyJoaXN0b3J5IjpbLTgwNTE2MDIyNCwtOTY2MjAwOTY3LC0xOD
+U1MTg1NTQ4LC00Mjk3NDM4MTcsLTUwNzY5NjgwNyw2MTEzNjMw
+MDcsLTM2MDY4Njc4NSwtMTIwODMyMjkwMyw3ODkwMzI4LDMxMD
+gzNDQ3OSw0MTk2MDQ2MywxODk4MzU0OTg3LDgyNDk2NzE4MCwt
+MzUzNjk1NDk1LC02MDUxMTkxMDRdfQ==
 -->
