@@ -37,14 +37,13 @@ As we can see each letter making matched with the Regex.
 
 The basics classes are in the next  CheatSheets. We should have in mind all of it to read and create our Regex.
 
-#### Basics Classes:
+#### Basics Class:
 ```
 . -> whatever caracter
 \w - > find any conjunct that looks like as word
 \d - > find all the digits
 \s - > spaces in blank
-^ - > beging of the line
-$ -> end of the line
+
 ```
 And we can create our own classes using `[]` 
 #### Costume Classes:
@@ -58,8 +57,11 @@ And we can create our own classes using `[]`
 + -> one or more
 ? -> zero or one
 ```
+
+^ - > beging of the line
+$ -> end of the line
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI1ODk3NTk0NywtMTg1NTE4NTU0OCwtND
+eyJoaXN0b3J5IjpbLTk2NjIwMDk2NywtMTg1NTE4NTU0OCwtND
 I5NzQzODE3LC01MDc2OTY4MDcsNjExMzYzMDA3LC0zNjA2ODY3
 ODUsLTEyMDgzMjI5MDMsNzg5MDMyOCwzMTA4MzQ0NzksNDE5Nj
 A0NjMsMTg5ODM1NDk4Nyw4MjQ5NjcxODAsLTM1MzY5NTQ5NSwt
