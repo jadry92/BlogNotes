@@ -23,7 +23,7 @@ We would find that:
 
 But what does it mean all those weird characters? :unamused: :expressionless:
 
-First thing that we has to now about a Regex 
+First thing that we has to now about a Regex is that each caracter has a spesific meaning:
 Before to show all meaning, I need to show you the basic CheatSheets and how to use.
 
 ##### Class:
@@ -44,7 +44,7 @@ $ -> end of the line
 ? -> zero or one
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU2MzUxOTE1MiwtMTIwODMyMjkwMyw3OD
+eyJoaXN0b3J5IjpbLTM2MDY4Njc4NSwtMTIwODMyMjkwMyw3OD
 kwMzI4LDMxMDgzNDQ3OSw0MTk2MDQ2MywxODk4MzU0OTg3LDgy
 NDk2NzE4MCwtMzUzNjk1NDk1LC02MDUxMTkxMDRdfQ==
 -->
