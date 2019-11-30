@@ -21,7 +21,7 @@ We would find that:
 
 ![example 1]()
 
-But whay
+But what that is mean ? 
 
 
 
@@ -38,7 +38,7 @@ But whay
 ? -> zero or one
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQxNzYyMjU3NSwzMTA4MzQ0NzksNDE5Nj
-A0NjMsMTg5ODM1NDk4Nyw4MjQ5NjcxODAsLTM1MzY5NTQ5NSwt
-NjA1MTE5MTA0XX0=
+eyJoaXN0b3J5IjpbLTEwMzM3MTI5NDksMzEwODM0NDc5LDQxOT
+YwNDYzLDE4OTgzNTQ5ODcsODI0OTY3MTgwLC0zNTM2OTU0OTUs
+LTYwNTExOTEwNF19
 -->
