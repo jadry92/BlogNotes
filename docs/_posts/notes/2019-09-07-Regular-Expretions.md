@@ -8,7 +8,7 @@ category: Notes
 
 A Regex (Regular Expression) is a patter which is possible to filter strings without using a lot of resources. Regexes are commonly used to filter URL, phone numbers, emails and so on.
 
-### Example 1:
+#### Example 1:
 
 If we would like to know if the next emails are valid for a registered in a specific platform.
 ```
@@ -27,7 +27,7 @@ But what does it mean all those weird characters? :unamused: :expressionless:
 
 The first thing that we have to know about Regexes is that each character or "Class" has a specific meaning. For example, the “.” class means whatever character.
 
-### Example 2:
+#### Example 2:
 
 [`hola`] - >  [`.`] - >  [`h`] [`o`] [`l`] [`a`] \
 where:\
@@ -37,7 +37,7 @@ As we can see each letter making matched with the Regex.
 
 The basics classes are in the next  CheatSheets. We should have in mind all of it to read and create our Regex.
 
-#### Basics Class:
+### Basics Class:
 ```
 . -> whatever caracter
 \w - > find any conjunct that looks like as word
@@ -46,38 +46,43 @@ The basics classes are in the next  CheatSheets. We should have in mind all of i
 ```
 
 Also we can create our classes using `[]` 
-#### Costume Classes:
+### Costume Classes:
 ``` 
 [0-9] ~ \d
 [0-9a-zA-Z_] ~ \w
 ```
 
-### Example 3:
+#### Example 3:
 
 [`hola`] - >  [`[oa]`] - >  [`o`] [`l`] \
 where:\
 [**input**] - > [**Filter**] - > [**Result**]
 
 And we can repeat class using the counters. There are general counters and specific.
-####  General Counters:
+###  General Counters:
 ```
 * -> zero or more (greedy)
 + -> one or more
 ? -> zero or one
 ```
 
-####  Spesific Counters:
+###  Spesific Counters:
 ```
 {A,B}-> A to B elemts
 ```
+#### Example 4:
 
-####  Extra:
+[`hola`] - >  [`.`] - >  [`o`] [`l`] \
+where:\
+[**input**] - > [**Filter**] - > [**Result**]
+
+###  Extras:
 ```
 ^ - > beging of the line
 $ -> end of the line
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NTkzODk0ODQsNTkyMDcyOTcsLTk2Nj
+eyJoaXN0b3J5IjpbLTE3MTMzMjkyNTQsNTkyMDcyOTcsLTk2Nj
 IwMDk2NywtMTg1NTE4NTU0OCwtNDI5NzQzODE3LC01MDc2OTY4
 MDcsNjExMzYzMDA3LC0zNjA2ODY3ODUsLTEyMDgzMjI5MDMsNz
 g5MDMyOCwzMTA4MzQ0NzksNDE5NjA0NjMsMTg5ODM1NDk4Nyw4
