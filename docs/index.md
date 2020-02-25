@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: home
 ---
 This site contain all the notes, tutorials and ideas that I used to create
 career as in tech industry.
