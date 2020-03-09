@@ -1,8 +1,10 @@
 ---
+layout: "page"
 title: "Notes"
-default: "notes"
+permalink: "/notes/"
+feature-img: "assets/img/pexels/computer.jpeg"
+tags: [Notes,blog]
 ---
-## Notes:
 
 <ul>
   {% for post in site.posts %}

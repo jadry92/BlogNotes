@@ -1,8 +1,11 @@
 ---
+layout: "page"
 title: "Ideas"
-default: "ideas"
+subtitle : "Ideas that I got in the wile"
+permalink: "/ideas/"
+feature-img: "assets/img/pexels/computer.jpeg"
+tags: [Ideas]
 ---
-## Ideas:
 
 <ul>
   {% for post in site.posts %}

@@ -1,8 +1,11 @@
 ---
+layout: "page"
 title: "Tutorials"
-default: "tutorials"
+permalink: "/tutorials/"
+subtitle: "Tutorials that I find usefull"
+feature-img: "assets/img/pexels/computer.jpeg"
+tags: [Tutorials]
 ---
-## Tutorials:
 
 <ul>
   {% for post in site.posts %}
