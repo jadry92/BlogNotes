@@ -1,19 +1,12 @@
-<footer>
-  <data href="{{ "/" | relative_url }}"></data>
-
-  <div>
-    <div>
-      <p class="text-footer">
-      Follow me :
-      </p>
-    </div>
-
-    <div>
-      <div class="social-links">
-        {%- include social.html -%}
-      </div>
-    </div>
-
-  </div>
-
+<footer class="site-footer">
+    <p class="text">
+        {{ site.footer_text | default: "Powered by <a href='https://jekyllrb.com/'>Jekyll</a> with <a href='https://github.com/sylhare/Type-on-Strap'>Type on Strap</a>" }}</p>
+            <div class="footer-icons">
+                <ul>
+                <!-- Social icons from Font Awesome, if enabled -->
+                {% include icons.html %}
+                </ul>
+            </div>
 </footer>
+
+
