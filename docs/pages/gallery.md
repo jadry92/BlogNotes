@@ -12,3 +12,5 @@ I wanted to create automatically a simple gallery from a folder without having t
 
 
 {% include gallery.html gallery_path=page.gallery_path %}
+
+Licencse : ....

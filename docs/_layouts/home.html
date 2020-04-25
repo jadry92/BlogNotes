@@ -7,7 +7,13 @@ layout: default
   <div id="main" class="call-out"
        style="background-image: url('{{ site.header_feature_image | relative_url }}')">
     <h1> {{ site.header_text | default: "Change <code>header_text</code> in <code>_config.yml</code>"}} </h1>
+    <h6 class="description_header"> {{ site.header_description | default: "Change <code>header_text</code> in <code>_config.yml</code>"}} </h5>
+  </div>
+
+  <div class="content">
+    {{ content }}
   </div>
 
   {% include blog.html %}
+  
 </div>

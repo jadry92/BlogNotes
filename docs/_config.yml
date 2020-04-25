@@ -3,20 +3,20 @@ baseurl: ""
 url: "https://blognotes.dev"
 
 # THEME-SPECIFIC CONFIGURATION
-title: "Blog Notes"
+title: "BlogNotes.Dev"
 email: "johan@blognotes.dev"
 author: "Johan Suarez Largo"
-description: "The Perfect Blog About Technology"
-avatar: "assets/img/basics/logo-v2.jpg"                         # Empty for no avatar in navbar
+description: "This site contain all the notes, tutorials and ideas that I have while I create a career in tech industry."
+avatar: #"assets/img/basics/logo-v2.jpg"                         # Empty for no avatar in navbar
 favicon: "assets/img/basics/favicon.png"
 
 #logo: "assets/img/basics/logo-v2.jpg"
 
 # Header and footer text
 header_text: "The perfect blog about technology"  # Change Blog header text
+header_description: "This site contain all the notes, tutorials and ideas that I have while I create a career in tech industry."  # Change Blog header text
 header_feature_image: "assets/img/pexels/triangular.jpeg"
-footer_text: >
-  Powered by <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://github.com/sylhare/Type-on-Strap">Type on Strap</a>
+footer_text: "Write by <a href='/about'>Johan Suarez Largo</a> using <a href='https://github.com/sylhare/Type-on-Strap'>Type-on-Strap</a>"
 
 # Blog
 excerpt: true                                           # Or "truncate" (first 250 characters), "false" to disable
@@ -34,8 +34,8 @@ authors: true                                               # In _data/authors.y
 language: true                                              # In _data/language.yml
 
 # PAGINATION
-#paginate: 5
-#paginate_path: "blog/page:num"
+paginate: 6
+paginate_path: "blog/page:num"
 
 # PORTFOLIO
 collections:

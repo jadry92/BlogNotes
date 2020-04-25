@@ -14,7 +14,7 @@ mhagnumdw:
   name: Mhagnumdw
   avatar: "assets/img/avatars/mhagnumdw_avatar.jpg"
   url:
-unknown:
-  name: Unknown
-  avatar:
-  url:
+johan:
+  name: "Johan"
+  avatar: assets/img/avatars/mhagnumdw_avatar.jpg
+  url: "/about"
