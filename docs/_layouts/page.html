@@ -10,18 +10,18 @@ layout: default
     </h1>
     
     {% if page.subtitle %}
-    <h2 class="subtitle">{{ page.subtitle }}</h2>
+      <h2 class="subtitle">{{ page.subtitle }}</h2>
     {% endif %}
       
   </header>
   <section class="post-content">
-  {% if page.bootstrap %}
-  <div class="bootstrap-iso">
-  {% endif %}
-	{{ content }}
-  {% if page.bootstrap %}
-  </div>
-  {% endif %}
+    {% if page.bootstrap %}
+    <div class="bootstrap-iso">
+    {% endif %}
+    {{ content }}
+    {% if page.bootstrap %}
+    </div>
+    {% endif %}
   </section>
     
     
