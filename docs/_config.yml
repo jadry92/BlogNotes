@@ -7,15 +7,15 @@ title: "BlogNotes.Dev"
 email: "johan@blognotes.dev"
 author: "Johan Suarez Largo"
 description: "This site contain all the notes, tutorials and ideas that I have while I create a career in tech industry."
-avatar: #"assets/img/basics/logo-v2.jpg"                         # Empty for no avatar in navbar
-favicon: "assets/img/basics/favicon.png"
+avatar: "assets/img/basics/favicon.jpeg"                         # Empty for no avatar in navbar
+favicon: "assets/img/basics/favicon.jpeg"
 
-#logo: "assets/img/basics/logo-v2.jpg"
+logo: "assets/img/basics/logo-v2.jpg"
 
 # Header and footer text
 header_text: "The perfect blog about technology"  # Change Blog header text
 header_description: "This site contain all the notes, tutorials and ideas that I have while I create a career in tech industry."  # Change Blog header text
-header_feature_image: "assets/img/pexels/triangular.jpeg"
+header_feature_image: assets/img/pexels/triangular.jpeg
 footer_text: "Write by <a href='/about'>Johan Suarez Largo</a> using <a href='https://github.com/sylhare/Type-on-Strap'>Type-on-Strap</a>"
 
 # Blog

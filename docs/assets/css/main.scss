@@ -11,10 +11,11 @@
 
 /* change the font of the title */
 @font-face {
-    font-family: 'Tomorrow';
-    src: url('../fonts/Tomorrow/Tomorrow-Regular.ttf') format('truetype');
+  font-family: 'Tomorrow';
+  src: url('../fonts/Tomorrow/Tomorrow-Regular.ttf') format('truetype');
 }
 
-.left-title { 
-    font-family: 'Tomorrow';
+.left-title {
+  font-family: 'Tomorrow';
+  color: #00C200;
 }

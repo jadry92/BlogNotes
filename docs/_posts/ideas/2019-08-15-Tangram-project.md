@@ -7,17 +7,47 @@ categories: [Ideas]
 tags: [AI, Genetic Algorithms]
 ---
 
+Genetics algorithms solves a Tangram puzzle.
+
 Tangram is a dissection puzzle that has seven pieces which you could imitate figures like this one [Wiki][1]
 
-![img](/assets/img/posts/ideas/2019-08-15-Tangram-project/Tangram-4.jpg "Tangram")
+![img]()
 
 The idea is to implement a Genetic Algorithm which solves the puzzle for specific images.
 
-My First idea of implementation is using [P5.js](https://p5js.org/). I think [P5.js](https://p5js.org/) could be an easy way to develop this idea because is an easy framework to animate ideas.
+My First idea of implementation is using javascript with [P5.js][1] library. [P5.js][1] could be an easy way to develop this idea because it is an easy framework to create animations.
+Genetic algorithms
 
-The beta of this idea will develop in this [link](https://github.com/jadry92).
+“A genetic algorithm (GA) is a metaheuristic inspired by the process of natural selection that belongs to the larger class of evolutionary algorithms (EA)” [wiki][3].
 
-.... in construction ...
 
-### References:
+### The steps of a GA is:
+
+- Define a goald or cost funtion.
+- Define a first generation “Xn” of solutions.
+- Check each of the solutions with the cost function “F” that wants to optimize.
+- Combine each of the solutions to create the second generation, these combinations are based on the value “F(Xn)”.
+
+### In programing words:
+
+X = [x1,x2,x3,x4, …, xn ] # First generation of solution
+function cost_function(x){
+	asdas
+}
+S = [s1,s2,s3, …, sn] # Solution value vector
+Function combination(S, X){
+	asdasd
+}
+
+The beta of this idea will develop in this [repo](https://github.com/jadry92) and the documentation is [here]().
+
+### challenges :
+1. Create the vector of solutions.
+2. Create the cost function
+3. Add new goals to the algorithm.
+4. ...
+
+
 [1]: https://en.wikipedia.org/wiki/Tangram "wikipedia"
+[2]: https://p5js.org/ “p5.js lib”
+[3]: https://en.wikipedia.org/wiki/Genetic_algorithm “wikipedia genetic algorithms”
