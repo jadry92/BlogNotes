@@ -34,8 +34,8 @@ authors: true                                               # In _data/authors.y
 language: true                                              # In _data/language.yml
 
 # PAGINATION
-paginate: 6
-paginate_path: "blog/page:num"
+paginate: 15
+paginate_path: "page:num"
 
 # PORTFOLIO
 collections:
@@ -49,6 +49,6 @@ highlighter: rouge
 sass:
   sass_dir: _sass
   style: :compressed
-plugins: [jekyll-paginate, jekyll-seo-tag, jekyll-feed]
+plugins: [jekyll-paginate, jekyll-seo-tag, jekyll-feed, jemoji]
 exclude: [".jekyll-cache", "Gemfile", "Gemfile.lock", "type-on-strap.gemspec", "*.gem", ".idea", "vendor/*",
           "LICENSE", "README.md", "screenshot.png", "assets/package.json", "assets/node_modules", "assets/gulpfile.js"]

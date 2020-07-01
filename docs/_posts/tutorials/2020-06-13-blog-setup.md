@@ -3,8 +3,9 @@ layout: "post"
 title: "Blog setup"
 feature-img: "assets/img/pexels/computer.jpeg"
 date: 2020-06-13
-categories: [Tutorial]
+categories: [Tutorials]
 tags: [blog, Docker, jekyll, ssl, less-encript]
+hide: False
 excerpt_separator: <!--more-->
 ---
 
@@ -23,7 +24,7 @@ List of technologies used in this project:
 
 The Diagram of the arquitecture is:
 
-()[img]
+![img](/assets/img/posts/tutorials/2020-06-13-blog-setup/diagrams.001.jpeg)
 
 ### Technologies
 
@@ -110,7 +111,7 @@ server {
 
 #### docker:
 
-Docker file for 
+Docker file for
 
 ```docker
 FROM jekyll/jekyll:latest
@@ -121,6 +122,9 @@ CMD [ "jekyll", "serve" ]
 ```
 
 #### ubuntu:
+
+I use a virtual machine with ubuntu 18.06
+
 #### docker-compuse:
 ```yaml
 version: '3'
@@ -157,8 +161,14 @@ services:
       - ./data/certbot/www:/var/www/certbot
     entrypoint: "/bin/sh -c 'trap exit TERM; while :; do certbot renew; sleep 12h & wait $${!}; done;'"
 ```
+
 #### let's encript:
 
+`init-letsencrypt.sh` is posible to download from this [link](https://github.com/wmnnd/nginx-certbot/blob/master/init-letsencrypt.sh)
+
+```shell
+ ./init-letsencrypt.sh
+```
 ### reference:
 
 [1] - [nginx and let's encript](https://medium.com/@pentacent/nginx-and-lets-encrypt-with-docker-in-less-than-5-minutes-b4b8a60d3a71)

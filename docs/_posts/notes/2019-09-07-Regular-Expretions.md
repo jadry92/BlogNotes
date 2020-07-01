@@ -1,12 +1,18 @@
 ---
-layout: post
-title: Regular Expressions
-category: Notes
+layout: "post"
+title: "Regular Expressions Notes"
+category: [Notes]
+date: 2019-09-07
+hide: False
+excerpt_separator: <!--more-->
+feature-img: "assets/img/pexels/computer.jpeg"
+tags: [Regex]
 ---
 
 "Regular Expressions are the key tools that all Developer should have in their pocket", it's the phrase with the teacher [Alberto Alcocer](https://twitter.com/beco) repat constantly in the course of [regular expressions](https://platzi.com/clases/expresiones-regulares/) in Platzi.
+<!--more-->
 
-A Regex (Regular Expression) is a patter which is possible to filter strings without using a lot of resources. Regexes are commonly used to filter URL, phone numbers, emails and so on.
+A Regex (Regular Expression) is a patter to filter strings without using a lot of resources. Regexp are commonly used to filter URL, phone numbers, emails and so on.
 
 #### Example 1:
 
@@ -25,15 +31,12 @@ We would find that:
 
 But what does it mean all those weird characters? :unamused: :expressionless:
 
-The first thing that we have to know about Regexes is that each character or "Class" has a specific meaning. For example, the “.” class means whatever character.
+The first thing that we have to know about Regexp is that each character or "Class" has a specific meaning. For example, the “.” class means whatever character.
 
 #### Example 2:
 
-[`hola`] - >  [`.`] - >  [`h`] [`o`] [`l`] [`a`] 
-
-where:
-
-[**input**] - > [**Regex**] - > [**Result**]
+`hola` - >  r'`.`'    - >  [`h`,`o`,`l`,`a`]<br/>
+**input** - > **Regex** - > **Result**
 
 As we can see each letter making matched with the Regex.
 
@@ -47,23 +50,21 @@ The basics classes are in the next  CheatSheets. We should have in mind all of i
 \s - > spaces in blank
 ```
 
-Also we can create our classes using `[]` 
+Also we can create our classes using `[]`
 ### Costume Classes:
-``` 
+```
 [0-9] ~ \d
 [0-9a-zA-Z_] ~ \w
 ```
 
 #### Example 3:
 
-[`hola`] - >  [`[oa]`] - >  [`o`] [`l`] 
-
-where:
-
-[**input**] - > [**Regex**] - > [**Result**]
+`hola` - >  r'`[oa]`' - >  [`o`,`a`]<br/>
+**input** - > **Regex** - > **Result**
 
 And we can repeat class using the counters. There are general counters and specific.
-###  General Counters:
+### General Counters:
+
 ```
 * -> zero or more (greedy)
 + -> one or more
@@ -76,23 +77,13 @@ And we can repeat class using the counters. There are general counters and speci
 ```
 #### Example 4:
 
-[`hola=hi`] - >  [`\w{2,3}`] - >  [`hol`] [`hi`] 
-
-where:
-
-[**input**] - > [**Regex**] - > [**Result**]
+`hola=hi` - > r'`\w{2,3}`' - > [`hol`, `hi`]<br/>
+**input** - > **Regex** - > **Result**
 
 ###  Extras:
+
 ```
 ^ - > beging of the line
 $ -> end of the line
 [^] -> invers class
 ```
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ3NjY5MTkxMywtMTQ3NTI5MTYyNSw1OT
-IwNzI5NywtOTY2MjAwOTY3LC0xODU1MTg1NTQ4LC00Mjk3NDM4
-MTcsLTUwNzY5NjgwNyw2MTEzNjMwMDcsLTM2MDY4Njc4NSwtMT
-IwODMyMjkwMyw3ODkwMzI4LDMxMDgzNDQ3OSw0MTk2MDQ2Mywx
-ODk4MzU0OTg3LDgyNDk2NzE4MCwtMzUzNjk1NDk1LC02MDUxMT
-kxMDRdfQ==
--->

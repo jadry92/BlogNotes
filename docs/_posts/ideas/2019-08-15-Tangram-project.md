@@ -7,11 +7,11 @@ categories: [Ideas]
 tags: [AI, Genetic Algorithms]
 ---
 
-Genetics algorithms solves a Tangram puzzle.
+Use genetics algorithms to solve a Tangram puzzle.
 
 Tangram is a dissection puzzle that has seven pieces which you could imitate figures like this one [Wiki][1]
 
-![img]()
+![img](/assets/img/posts/ideas/2019-08-15-Tangram-project/Tangram-4.jpg)
 
 The idea is to implement a Genetic Algorithm which solves the puzzle for specific images.
 
@@ -29,7 +29,7 @@ Genetic algorithms
 - Combine each of the solutions to create the second generation, these combinations are based on the value “F(Xn)”.
 
 ### In programing words:
-
+```
 X = [x1,x2,x3,x4, …, xn ] # First generation of solution
 function cost_function(x){
 	asdas
@@ -38,7 +38,7 @@ S = [s1,s2,s3, …, sn] # Solution value vector
 Function combination(S, X){
 	asdasd
 }
-
+```
 The beta of this idea will develop in this [repo](https://github.com/jadry92) and the documentation is [here]().
 
 ### challenges :
