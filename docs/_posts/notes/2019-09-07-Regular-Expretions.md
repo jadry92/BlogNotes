@@ -12,7 +12,7 @@ tags: [Regex]
 "Regular Expressions are the key tools that all Developer should have in their pocket", it's the phrase with the teacher [Alberto Alcocer](https://twitter.com/beco) repat constantly in the course of [regular expressions](https://platzi.com/clases/expresiones-regulares/) in Platzi.
 <!--more-->
 
-A Regex (Regular Expression) is a patter to filter strings without using a lot of resources. Regexp are commonly used to filter URL, phone numbers, emails and so on.
+A Regex (Regular Expression) is a patter to filter strings without using a lot of resources. Regexp are commonly used to filter URL, phone numbers, emails and so on. :+1:
 
 #### Example 1:
 
