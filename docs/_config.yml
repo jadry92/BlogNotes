@@ -14,9 +14,9 @@ logo: "assets/img/basics/logo-v2.jpg"
 
 # Header and footer text
 header_text: "The perfect blog about technology"  # Change Blog header text
-header_description: "This site contain all the notes, tutorials and ideas that I have while I create a career in tech industry."  # Change Blog header text
+header_description: "This site contains all the notes, tutorials and ideas that I have while I'm creating a career in the tech industry."  # Change Blog header text
 header_feature_image: assets/img/pexels/triangular.jpeg
-footer_text: "Write by <a href='/about'>Johan Suarez Largo</a> using <a href='https://github.com/sylhare/Type-on-Strap'>Type-on-Strap</a>"
+footer_text: "Write by <a href='/about'>Johan Suarez Largo</a> using <a target='_blank' href='https://github.com/sylhare/Type-on-Strap'>Type-on-Strap</a>"
 
 # Blog
 excerpt: true                                           # Or "truncate" (first 250 characters), "false" to disable

@@ -49,5 +49,11 @@
 
 .portfolio-cell {
   flex: 0 0 32%;
+    @media screen and (max-width: $break) {
+      flex: 0 0 45%;
+    }
+    @media screen and (max-width: $sm-break) {
+      flex: 0 0 55%;
+    }
   margin-bottom: 10px;
 }
