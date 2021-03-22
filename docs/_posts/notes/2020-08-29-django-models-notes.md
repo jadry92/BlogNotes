@@ -1,6 +1,6 @@
 ---
 layout: "post"
-title: "Django models note"
+title: "Django models"
 category: notes
 date: 2020-08-29
 hide: False
