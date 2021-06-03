@@ -1,13 +1,13 @@
-# Utilties
+# Utilities
 import argparse
 import datetime as dt
 import re
 import os
 
 
-def parce_data(args):
+def parser_data(args):
     """
-    receive the arges an create the data
+    receive the args an create the data
     return the data as a dictionary
     """
     data = {
@@ -18,10 +18,12 @@ def parce_data(args):
     }
     return data
 
+
 def create_file_name(data):
     title = re.sub(r'\s+', '-', data['title'])
     file_name = data['date'] + '-' + title + '.md'
     return file_name
+
 
 def create_file(data):
     text = '---\n\
@@ -38,9 +40,10 @@ tags: [{tags}]\n\
         title=data['title'],
         category=data['category'],
         tags=data['tags']
-        )
+    )
 
     return text
+
 
 def save_the_file(text, file_name):
 
@@ -53,17 +56,20 @@ def save_the_file(text, file_name):
     )
     if not os.path.exists(img_path):
         os.makedirs(img_path)
-    with open(path + file_name,'w') as f:
+    with open(path + file_name, 'w') as f:
         f.write(text)
         print('file created at: {}'.format(path + file_name))
         print('folder created at: {}'.format(img_path))
 
+
 def check_date(string):
     try:
         value = dt.datetime.strptime(string, '%d/%m/%y')
-    except :
-        raise argparse.ArgumentTypeError('The {} doesn\'t follow the date format %d/%m/%y'.format(string))
+    except:
+        raise argparse.ArgumentTypeError(
+            'The {} doesn\'t follow the date format %d/%m/%y'.format(string))
     return value
+
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Create a New Post')
@@ -92,7 +98,7 @@ if __name__ == '__main__':
         metavar='category',
         type=str,
         nargs=1,
-        help='category of  teh post',
+        help='category of the post',
         required=True
     )
     parser.add_argument(
@@ -107,7 +113,7 @@ if __name__ == '__main__':
     )
 
     args = parser.parse_args()
-    data = parce_data(args)
+    data = parser_data(args)
     file_name = create_file_name(data)
     text = create_file(data)
     save_the_file(text, file_name)
