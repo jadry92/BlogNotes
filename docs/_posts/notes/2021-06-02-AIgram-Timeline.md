@@ -13,7 +13,7 @@ This post content a journal of my develop process for the Web Application "AIgra
 
 <!--more-->
 
-## Entry -- 02/06/2021
+### Entry -- 02/06/2021
 The application has Two main experiences:
 - Feed:
   - Show Pictures.
@@ -24,7 +24,6 @@ The application has Two main experiences:
   - All pictures posted.
   - A short description.
 
-
+This two experiences has constrain base on the technology capabilities 
 
 #### To - Do
-- Local 

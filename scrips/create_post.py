@@ -63,8 +63,12 @@ def save_the_file(text, file_name):
 
 
 def check_date(string):
+    date_regex = re.compile(r"^\d\d\/\d\d\/\d\d\d\d$")
     try:
-        value = dt.datetime.strptime(string, '%d/%m/%y')
+        if date_regex.match(string):
+            value = dt.datetime.strptime(string, '%d/%m/%Y')
+        else:
+            value = dt.datetime.strptime(string, '%d/%m/%y')
     except:
         raise argparse.ArgumentTypeError(
             'The {} doesn\'t follow the date format %d/%m/%y'.format(string))
