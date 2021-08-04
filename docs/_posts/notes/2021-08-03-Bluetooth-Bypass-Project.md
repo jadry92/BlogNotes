@@ -18,12 +18,14 @@ My car is a Ford Fiesta 2012 which magically has bluetooth connection **Only For
 
 To fix this I think I can create an app to bypass the music as call... It's possible I don't know, there's already a solution for this, I don't know either. Let See.
 
-### Entry -- 03/08/2021
-
 To Do :
-- [x] Search for solutions
-- [ ] Create a Electron APP to start understand the Bluetooth Low Energy API
-- [ ] Research about React Native to create the app
+  [x] Search for solutions
+  [ ] ~~Create a Electron APP to start understand the Bluetooth API~~
+  [ ] Research about React Native to create the app
+  [ ] Creating setup to develop mobiles APPs
+  [ ] Create a React Native "Hello World"
+
+### Entry -- 03/08/2021
 
 #### Solution 1 : "Update Software of  the car"
 
@@ -33,3 +35,22 @@ Yes, there is not a easy update the Ford stereo software.
 #### Solution 2 : "Apps already made"
 
 There is tons of Android Apps for bluetooth features but nothing that I'm looking for.
+
+
+#### Solution 3 : "Make an App to fix the problem"
+
+I'm going to choose this because I think it's the "easiest" way to fix this.
+
+I will use React Native because I have a bit of knowledge on React.js.
+
+____
+### Entry -- 04/08/2021
+
+#### Setting up Development Env
+
+I followed https://reactnative.dev/docs/environment-setup, the have to ways to setup your env. The easy is **Expo CLI** which it's a tool to develop React Native APP. An the normal one which is installing the **React Native CLI**.
+
+I installed the normal which involved install [Android Studio](https://developer.android.com/studio/index.html)
+
+___
+### Entry -- 
