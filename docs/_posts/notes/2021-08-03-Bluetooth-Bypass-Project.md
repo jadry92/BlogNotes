@@ -1,16 +1,15 @@
 ---
-layout: "post"
-title: "Bluetooth Bypass Project"
+layout: 'post'
+title: 'Bluetooth Bypass Project'
 category: notes
 date: 2021-08-03
 hide: False
 excerpt_separator: <!--more-->
-feature-img: "assets/img/pexels/computer.jpeg"
+feature-img: 'assets/img/pexels/computer.jpeg'
 tags: []
 ---
 
-
-This project is to create a bypass in bluetooth to reproduce music on my car. 
+This project is to create a bypass in bluetooth to reproduce music on my car.
 
 <!--more-->
 
@@ -19,23 +18,22 @@ My car is a Ford Fiesta 2012 which magically has bluetooth connection **Only For
 To fix this I think I can create an app to bypass the music as call... It's possible I don't know, there's already a solution for this, I don't know either. Let See.
 
 To Do :
-  [x] Search for solutions
-  [ ] ~~Create a Electron APP to start understand the Bluetooth API~~
-  [ ] Research about React Native to create the app
-  [ ] Creating setup to develop mobiles APPs
-  [ ] Create a React Native "Hello World"
+[x] Search for solutions
+[ ] ~~Create a Electron APP to start understand the Bluetooth API~~
+[ ] Research about React Native to create the app
+[ ] Creating setup to develop mobiles APPs
+[ ] Create a React Native "Hello World"
 
 ### Entry -- 03/08/2021
 
-#### Solution 1 : "Update Software of  the car"
+#### Solution 1 : "Update Software of the car"
 
-I researched about it and it's not an easy task. I will need to get a cable to connect with the car computer. 
+I researched about it and it's not an easy task. I will need to get a cable to connect with the car computer.
 Yes, there is not a easy update the Ford stereo software.
 
 #### Solution 2 : "Apps already made"
 
 There is tons of Android Apps for bluetooth features but nothing that I'm looking for.
-
 
 #### Solution 3 : "Make an App to fix the problem"
 
@@ -43,14 +41,20 @@ I'm going to choose this because I think it's the "easiest" way to fix this.
 
 I will use React Native because I have a bit of knowledge on React.js.
 
-____
+---
+
 ### Entry -- 04/08/2021
 
 #### Setting up Development Env
 
 I followed https://reactnative.dev/docs/environment-setup, the have to ways to setup your env. The easy is **Expo CLI** which it's a tool to develop React Native APP. An the normal one which is installing the **React Native CLI**.
 
-I installed the normal which involved install [Android Studio](https://developer.android.com/studio/index.html)
+I installed the normal which involved install [Android Studio](https://developer.android.com/studio/index.html), And [Xcode](https://developer.apple.com/xcode/).
 
-___
-### Entry -- 
+---
+
+### Entry -- 12/09/2021
+
+After a study for a while React Native, I found enough knowledge to start with the solution for my problem. The repository for the code will be on [link]()
+
+The first step is to understand how work with Bluetooth in Android, for that I will use the library [BTL](https://github.com/Polidea/react-native-ble-plx) created by Polidea.
