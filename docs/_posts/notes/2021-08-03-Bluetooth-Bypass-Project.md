@@ -18,11 +18,12 @@ My car is a Ford Fiesta 2012 which magically has bluetooth connection **Only For
 To fix this I think I can create an app to bypass the music as call... It's possible I don't know, there's already a solution for this, I don't know either. Let See.
 
 To Do :
+
 [x] Search for solutions
 [ ] ~~Create a Electron APP to start understand the Bluetooth API~~
-[ ] Research about React Native to create the app
-[ ] Creating setup to develop mobiles APPs
-[ ] Create a React Native "Hello World"
+[x] Research about React Native to create the app
+[x] Creating setup to develop mobiles APPs
+[x] Create a React Native "Hello World"
 
 ### Entry -- 03/08/2021
 
