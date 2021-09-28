@@ -19,11 +19,12 @@ To fix this I think I can create an app to bypass the music as call... It's poss
 
 To Do :
 
-[x] Search for solutions
-[ ] ~~Create a Electron APP to start understand the Bluetooth API~~
-[x] Research about React Native to create the app
-[x] Creating setup to develop mobiles APPs
-[x] Create a React Native "Hello World"
+- [x] Search for solutions
+- [ ] ~~Create a Electron APP to start understand the Bluetooth API~~
+- [x] Research about React Native to create the app
+- [x] Creating setup to develop mobiles APPs
+- [x] Create a React Native "Hello World"
+- [] Start play with the Bluetooth API
 
 ### Entry -- 03/08/2021
 
@@ -59,3 +60,5 @@ I installed the normal which involved install [Android Studio](https://developer
 After a study for a while React Native, I found enough knowledge to start with the solution for my problem. The repository for the code will be on [link]()
 
 The first step is to understand how work with Bluetooth in Android, for that I will use the library [BTL](https://github.com/Polidea/react-native-ble-plx) created by Polidea.
+
+### Entry -- 17/09/2021
