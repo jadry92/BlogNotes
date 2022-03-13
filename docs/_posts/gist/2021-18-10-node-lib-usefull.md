@@ -1,0 +1,77 @@
+---
+layout: 'post'
+title: 'Node useful libraries'
+category: gist
+date: 2021-10-18
+hide: False
+excerpt_separator: <!--more-->
+feature-img: 'assets/img/pexels/computer.jpeg'
+tags: [js, node]
+---
+
+This post contain useful libraries that I got recommended in courser/post/videos.
+
+1. [bcrypt.js](https://www.npmjs.com/package/bcrypt)
+
+This is a library to manage all crypto for passwords. [wiki](https://en.wikipedia.org/wiki/Bcrypt)
+
+To install with npm:
+
+```bash
+npm i bcrypt
+```
+
+a basic use with node 12.xx could be:
+
+```js
+const bcrypt = require('bcrypt');
+
+const saltRounds = 10;
+const myPlaintextPassword = 'bla1234!D';
+const otherPlaintextPassword = 'not_bacon';
+
+async function savePassword(saltRounds, plaintextPassword) {
+  const salt = await bcrypt.genSalt(saltRounds);
+  const hashPassword = await bcrypt.hash(myPlaintextPassword, salt);
+  // await saveInDataBase(hashPassword)
+}
+
+savePassword(saltRounds, myPlaintextPassword);
+```
+
+2. [moment.js](https://momentjs.com)
+
+Moment.js it's a library to manege date in easy way.
+
+To install moment.js
+
+```bash
+npm install moment
+```
+
+moment.js give us a unique object to manipulate/show/parser dates, for example:
+
+```js
+const moment = require('moment');
+
+const today = moment();
+
+console.log(today.format('Do - MMMM'));
+```
+
+3. [sharp.js](https://www.npmjs.com/package/sharp)
+
+sharp.js is a optimize library to manipulate with images (png/jpeg).
+
+```bash
+npm i sharp
+```
+
+```js
+const sharp = require('sharp');
+
+
+sharp(inputBuffer)
+  .resize(320, 240)
+  .toFile('output.webp', (err, info) => { ... });
+```

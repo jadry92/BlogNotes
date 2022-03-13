@@ -1,10 +1,31 @@
-const title = '\n Lucy | How does React decide to re-render a component? \n'
+const fs = require('fs');
+const stream = require('stream')
+const util = require('util')
+let data = ''
 
-const result = title.split('').filter((character) => character != '\n').join('').trim()
+let readableStream = fs.createReadStream(__dirname + './input.txt')
 
-console.log(result);
+readableStream.setEncoding('utf-8')
+readableStream.on('data', (chunk) => {
+  data += chunk;
+})
 
-const p = 'https://www.accc.gov.au/system/files/20-47RPT_Communications_Market_Report_FA.pdf'
+readableStream.on('end', () => {
+  console.log(data);
+})
 
-const res = p.match('.*\.pdf$')[0]
-console.log(res);
+class Mayus extends stream.Transform {
+  constructor () {
+    super();
+  }
+
+  _transform = (chunk,codifc, cb) => {
+    const chunkMayus = chunk.toString().toUpperCase()
+    this.push(chunkMayus)
+    cb()
+  }
+}
+
+let mayus = new Mayus;
+
+readableStream.pipe(mayus).pipe(process.stdout)
