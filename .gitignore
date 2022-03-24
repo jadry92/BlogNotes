@@ -10,3 +10,8 @@ img-drafts
 .DS_Store
 .vscode
 # End of https://www.gitignore.io/api/jekyll
+
+node_modules/
+.cache/
+public
+
