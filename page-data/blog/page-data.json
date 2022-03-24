@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-pages-blog-index-tsx",
+    "path": "/blog/",
+    "result": {"data":{"allMdx":{"nodes":[{"frontmatter":{"date":"October 18, 2021","title":"Node useful libraries"},"slug":"gist/2021-18-10-node-lib-usefull","id":"9afa967f-a199-5343-a437-1c480db6ea82"},{"frontmatter":{"date":"August 15, 2019","title":"Search in a Array of Objects javascript"},"slug":"gist/2021-24-08-search-array-of-objs-js","id":"8e123c13-8049-5184-b935-525649a56a25"}]}},"pageContext":{}},
+    "staticQueryHashes": []}
