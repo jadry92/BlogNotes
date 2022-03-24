@@ -1,17 +1,9 @@
 ---
-layout: "post"
-title: "Django models"
-category: notes
+title: 'Django models'
 date: 2020-08-29
-hide: False
-excerpt_separator: <!--more-->
-feature-img: "assets/img/pexels/computer.jpeg"
-tags: []
 ---
 
 This post's to remain me what are the different types of models that I can use in a Django app.
-
-<!--more-->
 
 ## Models
 
@@ -20,6 +12,7 @@ Django uses an ORM "Object-related Mapping" to interact with the database. That 
 Example:
 
 Model :
+
 ```python
 
 from django.db import models
@@ -58,6 +51,7 @@ Table:
 ## Model inheritance
 
 There are 3 types of model inheritances:
+
 - Proxy Models
 - Multi-tale Models
 - Abstrac Models
@@ -125,6 +119,7 @@ class Student(Person):
     ...
 
 ```
+
 In this case the student table looks like:
 
 <table>
@@ -154,16 +149,13 @@ In this case the student table looks like:
 
 ## relationships
 
-
 <h3 id="one_to_one">One To One</h3>
-
 
 One to one relationship is a "1:1" connection between tables.
 
 {:refdef: style="text-align: center;"}
 ![one_to_one_field]({{ "assets/img/posts/notes/2020-08-29-Django-models-notes/one-to-one-model.png" | relative_url }})
 {: refdef}
-
 
 ```python
 from django.db import models
@@ -243,7 +235,6 @@ class Topping(models.Model):
     ...
 
 ```
-
 
 ### References
 

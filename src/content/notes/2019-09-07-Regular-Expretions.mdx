@@ -1,15 +1,10 @@
 ---
-layout: "post"
-title: "Regular Expressions Notes"
-category: [Notes]
+title: 'Regular Expressions Notes'
 date: 2019-09-07
-hide: False
-excerpt_separator: <!--more-->
-feature-img: "assets/img/pexels/computer.jpeg"
-tags: [Regex]
 ---
 
 "Regular Expressions are the key tools that all Developer should have in their pocket", it's the phrase with the teacher [Alberto Alcocer](https://twitter.com/beco) repat constantly in the course of [regular expressions](https://platzi.com/clases/expresiones-regulares/) in Platzi.
+
 <!--more-->
 
 A Regex (Regular Expression) is a patter to filter strings without using a lot of resources. Regexp are commonly used to filter URL, phone numbers, emails and so on. :+1:
@@ -17,14 +12,18 @@ A Regex (Regular Expression) is a patter to filter strings without using a lot o
 #### Example 1:
 
 If we would like to know if the next emails are valid for a registered in a specific platform.
+
 ```
 blue_keep@windous.fail
 asd@qwe@gmail.como
 ```
+
 With the next Regex:
+
 ```
 ^[\w\._]{1,30}@[\w\.\-]+\.[a-z]{2,5}$
 ```
+
 We would find that:
 
 ![example 1]({{ "/assets/img/posts/notes/2019-09-07-Regular-Expretions/example.png" | relative_url }})
@@ -35,14 +34,15 @@ The first thing that we have to know about Regexp is that each character or "Cla
 
 #### Example 2:
 
-`hola` - >  r'`.`'    - >  [`h`,`o`,`l`,`a`]<br/>
+`hola` - > r'`.`' - > [`h`,`o`,`l`,`a`]<br/>
 **input** - > **Regex** - > **Result**
 
 As we can see each letter making matched with the Regex.
 
-The basics classes are in the next  CheatSheets. We should have in mind all of it to read and create our Regex.
+The basics classes are in the next CheatSheets. We should have in mind all of it to read and create our Regex.
 
 ### Basics Class:
+
 ```
 . -> whatever caracter
 \w - > represents all lowercase and uppercase words, digits and '_'
@@ -51,7 +51,9 @@ The basics classes are in the next  CheatSheets. We should have in mind all of i
 ```
 
 Also we can create our classes using `[]`
+
 ### Costume Classes:
+
 ```
 [0-9] ~ \d
 [0-9a-zA-Z_] ~ \w
@@ -59,10 +61,11 @@ Also we can create our classes using `[]`
 
 #### Example 3:
 
-`hola` - >  r'`[oa]`' - >  [`o`,`a`]<br/>
+`hola` - > r'`[oa]`' - > [`o`,`a`]<br/>
 **input** - > **Regex** - > **Result**
 
 And we can repeat class using the counters. There are general counters and specific.
+
 ### General Counters:
 
 ```
@@ -71,16 +74,18 @@ And we can repeat class using the counters. There are general counters and speci
 ? -> zero or one
 ```
 
-###  Spesific Counters:
+### Spesific Counters:
+
 ```
 {A,B}-> A to B elemts
 ```
+
 #### Example 4:
 
 `hola=hi` - > r'`\w{2,3}`' - > [`hol`, `hi`]<br/>
 **input** - > **Regex** - > **Result**
 
-###  Extras:
+### Extras:
 
 ```
 ^ - > beging of the line

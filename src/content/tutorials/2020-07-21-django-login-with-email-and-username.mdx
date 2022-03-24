@@ -1,12 +1,6 @@
 ---
-layout: "post"
-title: "Django login with email and username"
-category: tutorials
+title: 'Django login with email and username'
 date: 2020-07-21
-hide: False
-excerpt_separator: <!--more-->
-feature-img: "assets/img/pexels/computer.jpeg"
-tags: [django, python]
 ---
 
 This is a simple solution to create custume logins with django.
@@ -25,6 +19,7 @@ AUTHENTICATION_BACKENDS = [
 ]
 ...
 ```
+
 In this case, I add the default "ModelBackend" which allows me to log in with username and "EmailModelBackend" which is my costume.
 
 Second, create a python file "backends.py" in the "users" app with the class "EmailModelBackend".
@@ -61,9 +56,10 @@ class EmailModelBackend(ModelBackend):
 
 ```
 
-I re-write the method  base on the base [code](https://github.com/django/django/blob/3d16496037fbb8a6bbc6b6e354fa4f5eb65e6cea/django/contrib/auth/backends.py#L9)
+I re-write the method base on the base [code](https://github.com/django/django/blob/3d16496037fbb8a6bbc6b6e354fa4f5eb65e6cea/django/contrib/auth/backends.py#L9)
 
 Also, I create this unittest to make sure it's working properly:
+
 ```python
 """Login views unit test"""
 
@@ -129,8 +125,7 @@ class TestLoginView(TestCase):
 
 ```
 
-To Have In mind:
----
+## To Have In mind:
 
-* The Django authentication checks all the backends and which first allow to authenticate will use.
-* The stronger of the system is equal at the weakest point.
+- The Django authentication checks all the backends and which first allow to authenticate will use.
+- The stronger of the system is equal at the weakest point.

@@ -1,15 +1,13 @@
 ---
-layout: post
-title: "_Script_ para ordenar los _screen shots_ en carpetas por echas."
+title: '_Script_ para ordenar los _screen shots_ en carpetas por echas.'
 date: 2019-09-15
-categories: [Tutorials]
-tags: [Bash, crontap]
 ---
 
 A modo de proyecto para este curso de linea de commando, decidi copiar la idea del profesor de un _script_ que ordenar todos los _screen shots_ en carpetas respecto a cuando fueron creados.
 
 Mi primer idea de solución lo dibuje en el siguiente diagrama.
-```mermaid
+
+```
 graph TD
 A[MONTHS = Listar todos los<br>meses de creación de los archivos] --> B{For i in MONTHS};
 B --> C[Crear carpetas];
@@ -19,12 +17,15 @@ D --> E(Fin)
 ```
 
 ### Paso 1:
+
 El primer paso es determinar los meses en que los archivos fueron creados, para ello use:
 
 ```bash
 ls -l
 ```
+
 Resultado :
+
 ```bash
 ..
 -rw-r--r--@ 1 johan  staff 104354 29 Aug 12:15 WhatsApp Image 2019-08-29 at 12.14.52 PM.jpeg
@@ -38,7 +39,9 @@ Luego con `grep` y una expression regural enfocadata en filtrar solo elementos. 
 ```bash
 ls -l | grep "^-.*$"
 ```
- Resultado:
+
+Resultado:
+
 ```bash
 ..
 -rw-r--r--@ 1 johan  staff 104354 29 Aug 12:15 WhatsApp Image 2019-08-29 at 12.14.52 PM.jpeg
@@ -51,7 +54,9 @@ Luego con `awk` y un `print` para filtrar los meses en que los archivos fueron c
 ```bash
 ls -l | grep "^-.*$" | awk '{print $7}'
 ```
+
 Resultado:
+
 ```bash
 ..
 Sep
@@ -81,7 +86,9 @@ Para guardar el resultado de este comando en una variable de _bash_ enconter [ac
 ```bash
 MONTHS=$(ls -l | grep "^-.*$" | awk '{print $7}' | sort -u)
 ```
+
 Y además cree este comando para determinar el año de creación de los archivos:
+
 ```bash
 YEAR=$(date | awk '{print $4}')
 ```
@@ -94,10 +101,9 @@ MONTHS=$(ls -l | grep "^-.*$" | awk '{print $7}' | sort -u)
 YEAR=$(date | awk '{print $4}')
 ```
 
-
 ### Paso 2:
 
-El segundo paso es la creación de las carpetas  donde se van a ordenar los elementos, para ello use un ciclo `for` el cual es muy parecido al de Python, [acá](https://www.cyberciti.biz/faq/bash-for-loop/) encontre como se define. Y si lo aplico a mi proyecto se veria de la siguiente manera:
+El segundo paso es la creación de las carpetas donde se van a ordenar los elementos, para ello use un ciclo `for` el cual es muy parecido al de Python, [acá](https://www.cyberciti.biz/faq/bash-for-loop/) encontre como se define. Y si lo aplico a mi proyecto se veria de la siguiente manera:
 
 ```bash
 #!/bin/bash
@@ -109,6 +115,7 @@ do
 	echo  "$i-$YEAR"
 done
 ```
+
 Resultado:
 
 ```bash
@@ -137,13 +144,14 @@ do
 	mv -v $FILES_TO_MOVE $i-$YEAR/
 done
 ```
+
 La expresión se puede enteder de la siguiente manera:
 
 [img]
 
 Si no entendiste la expreción regular te invito a hacer el curso de [Regex](https://platzi.com/clases/expresiones-regulares/) (Excelente curso!)
 
-Pero el _script_ aún no funciona, por que los nombres se generan con espasios en MacOs , entonces `awk` nos retorna solo la primera parte del nombre de los archivos. Buscando por internet varias formas de solucionar esto [1](https://stackoverflow.com/questions/7039130/iterate-over-a-list-of-files-with-spaces), [2](https://unix.stackexchange.com/questions/310320/extracting-a-part-of-string-using-grep-sed-awk), pero creo la mejor solución seria cambiar los " " por "_" en los nombres y así  lo implemente:
+Pero el _script_ aún no funciona, por que los nombres se generan con espasios en MacOs , entonces `awk` nos retorna solo la primera parte del nombre de los archivos. Buscando por internet varias formas de solucionar esto [1](https://stackoverflow.com/questions/7039130/iterate-over-a-list-of-files-with-spaces), [2](https://unix.stackexchange.com/questions/310320/extracting-a-part-of-string-using-grep-sed-awk), pero creo la mejor solución seria cambiar los " " por "\_" en los nombres y así lo implemente:
 
 ```bash
 # rename files
@@ -152,10 +160,12 @@ do
 	mv "$f" "${f// /_}"
 done
 ```
+
 Esta idea la tome de este [foro](https://stackoverflow.com/questions/2709458/how-to-replace-spaces-in-file-names-using-a-bash-script) y muestra una funcionalida de _bash_ llamada "[_Parameter expansion_](https://wiki.bash-hackers.org/syntax/pe)" (MUY Interesante).
 
 Y al final mi _scrip_ quedo de la siguiente manera:
 Versión final:
+
 ```bash
 #!/bin/bash
 # path of the screen shots folder

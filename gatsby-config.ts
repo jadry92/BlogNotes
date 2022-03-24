@@ -2,8 +2,8 @@ import type { GatsbyConfig } from "gatsby";
 
 const config: GatsbyConfig = {
   siteMetadata: {
-    title: `new`,
-    siteUrl: `https://www.yourdomain.tld`
+    title: `BlogNotes.Dev`,
+    siteUrl: `https://blognotes.dev`
   },
   plugins: [{
     resolve: 'gatsby-plugin-google-analytics',
