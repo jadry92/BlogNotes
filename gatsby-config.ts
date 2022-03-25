@@ -12,12 +12,20 @@ const config: GatsbyConfig = {
     }
   }, 
   "gatsby-plugin-sharp",
-  "gatsby-plugin-mdx", 
+  "gatsby-plugin-mdx",
+  "gatsby-plugin-sass",
   {
     resolve: 'gatsby-source-filesystem',
     options: {
       "name": "pages",
       "path": "./src/pages/"
+    },
+  },
+  {
+    resolve: 'gatsby-source-filesystem',
+    options: {
+      "name": "projects",
+      "path": "./src/projects/"
     },
   },
   {

@@ -5,8 +5,6 @@ date: 2020-07-21
 
 This is a simple solution to create custume logins with django.
 
-<!--more-->
-
 Working in my project of [AIgram](https://github.com/jadry92/Platzigram-project), I realise that Instagram allows users to login with their username, email and phone number. So I challenge my self to achieve that without breaking the Django authentication structure. Searching about on the internet I found [this post](https://stackoverflow.com/questions/25316765/log-in-user-using-either-email-address-or-username-in-django) where they show how to create multiples login checks using the Django authentication. My implementation of that I summarise in the next steps.
 
 First, add the authentication "backend" class in the "settings.py" that class has your login logic (login with email, log in with phone number, so on.).

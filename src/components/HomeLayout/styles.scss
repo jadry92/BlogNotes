@@ -1,0 +1,27 @@
+$color-base-1: #2d3142;
+$color-base-2: #bfc0c0;
+$color-base-3: #ef8354;
+$color-base-4: #4f5d75;
+
+.bg-color-1 {
+  background-color: $color-base-1;
+}
+.bg-color-2 {
+  background-color: $color-base-2;
+}
+.bg-color-3 {
+  background-color: $color-base-3;
+}
+.bg-color-4 {
+  background-color: $color-base-4;
+}
+
+@font-face {
+  font-family: 'Red Hat';
+  src: url(/static/fonts/Red_Hat_Display/static/RedHatDisplay-Regular.ttf)
+    format();
+}
+
+.title-font-family {
+  font-family: 'Red Hat';
+}
