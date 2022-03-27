@@ -17,22 +17,8 @@ const config: GatsbyConfig = {
   {
     resolve: 'gatsby-source-filesystem',
     options: {
-      "name": "pages",
-      "path": "./src/pages/"
-    },
-  },
-  {
-    resolve: 'gatsby-source-filesystem',
-    options: {
-      "name": "projects",
-      "path": "./src/projects/"
-    },
-  },
-  {
-    resolve: 'gatsby-source-filesystem',
-    options: {
       "name": "content",
-      "path": "./src/content/"
+      "path": "./content/"
     },
   }]
 };

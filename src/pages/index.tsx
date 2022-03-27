@@ -51,7 +51,7 @@ const Home = ({ data } : IProps ) => {
 
   return (
     <HomeLayout>
-      <div className="row vh-100">
+      <div className="row vh-75">
         <div className="row h-50 align-content-center">
           <div className="col text-center">
             <h1 className="display-1"> Welcome to <strong className="title-font-family">BlogNotes.dev</strong></h1>
@@ -65,7 +65,7 @@ const Home = ({ data } : IProps ) => {
           </div>
           <div className="col-12">
             <p className="h3">
-              This site contain my projects and thoughts.
+              This site is been migrated to Gatsby at the moment :)
             </p>
           </div>
         </div>
@@ -76,9 +76,9 @@ const Home = ({ data } : IProps ) => {
           <h3 className="ps-4">Projects:</h3>
         </div>
       </div>
-      <div className="row bg-color-2">
+      
       <ProjectsLayout projects={projectsData}/>
-      </div>
+
 
       <Footer/>
 
