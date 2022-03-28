@@ -1,5 +1,0 @@
-{
-    "componentChunkName": "component---src-pages-portfolio-index-tsx",
-    "path": "/portfolio/",
-    "result": {"data":{"allMdx":{"nodes":[{"slug":"projects/API-copy-2","id":"d1da4a4f-a828-5140-ae4a-8d497811b58c","frontmatter":{"date":"November 27, 2019","description":"asdasdasdas","title":"API - Project 4"}},{"slug":"projects/API-copy-3","id":"3f496c5e-3e05-5a9f-aecb-fa7c3699be70","frontmatter":{"date":"November 27, 2019","description":"asdasdasdas","title":"API - Project 3"}},{"slug":"projects/API-copy","id":"a2ebfb19-793e-5de0-9613-bdff8350f0ab","frontmatter":{"date":"November 27, 2019","description":"asdasdasdas","title":"API - Project 2"}},{"slug":"projects/API","id":"74eb76db-2bd2-5ada-b408-f89b6883d91a","frontmatter":{"date":"November 27, 2019","description":"asdasdasdas","title":"API - Project 1"}}]}},"pageContext":{}},
-    "staticQueryHashes": []}
