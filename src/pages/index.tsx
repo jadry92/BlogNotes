@@ -4,54 +4,16 @@ import HomeLayout from "../components/HomeLayout"
 import ProjectsLayout from "../components/ProjectsLayout"
 import Footer from "../components/Footer"
 
-export const query = graphql`
-query GET_ALL_PROJECTS_HOME {
-  allMdx(filter: {frontmatter: {folder: {eq: "projects"}}}) {
-    nodes {
-      slug
-      id
-      frontmatter {
-        description
-        title
-      }
-    }
-  }
-}
-`
-
-interface IData {
-  description : string
-  title : string
-}
 
 interface IProps {
-  data : { allMdx : { 
-      nodes : [
-        {
-          id : string;
-          slug : string;
-          frontmatter: IData;
-        }
-      ]
-    }
-  }
+  data : []
 }
 
 const Home = ({ data } : IProps ) => {
 
-  const projectsData = data.allMdx.nodes.map( (node) => (
-    {
-      title: node.frontmatter.title,
-      description: node.frontmatter.description,
-      imageURL: node.id,
-      id: node.id,
-      slug: node.slug,
-    }
-  ))
-
   return (
     <HomeLayout>
-      <div className="row vh-75">
+      <div className="container-fluid my-vh-90">
         <div className="row h-50 align-content-center">
           <div className="col text-center">
             <h1 className="display-1"> Welcome to <strong className="title-font-family">BlogNotes.dev</strong></h1>
@@ -71,14 +33,16 @@ const Home = ({ data } : IProps ) => {
         </div>
       </div>
 
-      <div className="row bg-color-2">
-        <div className="col-12">
-          <h3 className="ps-4">Projects:</h3>
+      <div className="container-fluid">
+        <div className="row bg-color-2">
+          <div className="col-12 my-3">
+            <h3 className="ps-4">Projects:</h3>
+          </div>
         </div>
       </div>
-      
-      <ProjectsLayout projects={projectsData}/>
-
+      <div className="container-fluid">
+        <ProjectsLayout numberOfProjects={2}/>
+      </div>
 
       <Footer/>
 

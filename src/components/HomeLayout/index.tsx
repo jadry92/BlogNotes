@@ -6,9 +6,9 @@ interface IProps {
 
 const HomeLayout = ({children} : IProps) => {
   return (
-    <div className='container'>
+    <section className=''>
       {children}
-    </div>
+    </section>
   )
 }
 

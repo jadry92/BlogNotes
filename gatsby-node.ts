@@ -8,7 +8,7 @@ exports.createPages = async ({ graphql, actions }) => {
   const result = await graphql(`
   query GET_BLOG_POST {
       allMdx(
-        filter: {frontmatter: {folder: {eq: "content"}}}
+        filter: {frontmatter: { published: {eq: true}}} 
         sort: {fields: frontmatter___date, order: DESC}
         ) {
         nodes {
@@ -28,10 +28,10 @@ exports.createPages = async ({ graphql, actions }) => {
   if (result.errors) {
     throw result.errors
   }
-  const publish = true
+ 
   result.data.allMdx.nodes.forEach((node) => {
-    if (publish &&  node.frontmatter.title !== '') {
-      const url = `${node.frontmatter.folder}/${node.frontmatter.title.replace(' ','-')}`
+    if (node.frontmatter.title !== '') {
+      const url = `${node.frontmatter.folder}/${node.frontmatter.title.replace(/ /g,'-')}`
       createPage({
         path: url,
         component: blogPostTemplate,

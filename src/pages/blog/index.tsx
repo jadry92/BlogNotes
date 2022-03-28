@@ -5,13 +5,16 @@ import BlogLayout from '../../components/BlogLayout';
 export const query = graphql`
   query GET_ALL_POSTS {
     allMdx(
-      filter: {frontmatter: {folder: {eq: "content"}}}
+      filter: {frontmatter: {folder: {eq: "blog"}, published: {eq: true}}}
       sort: {fields: frontmatter___date, order: DESC}
       ) {
       nodes {
         frontmatter {
           date(formatString: "MMMM D, YYYY")
           title
+          description
+          folder
+          progress
         }
         slug
         id
@@ -22,20 +25,27 @@ export const query = graphql`
 
 interface Inode {
   id : string;
-  slug : string;
   frontmatter : { 
     title: string;
     date: string;
+    description: string;
+    folder: string;
   }
 }
 
 interface IData {
   allMdx : { 
-    nodes : [Inode];
+    nodes : Inode[];
   }
 }
 
+
 const BlogPage = ({ data } : {data : IData}) => {
+  
+  const createURL = (folder: string, title: string): string => {
+    return `/${folder}/${title.replace(/ /g,'-')}`
+  } 
+
   return (
     <BlogLayout>
       {
@@ -48,10 +58,10 @@ const BlogPage = ({ data } : {data : IData}) => {
               <div className="col-md-7 col-8">
                 <div className="card-body">
                   <h5 className="card-title">{node.frontmatter.title}</h5>
-                  <p className="card-text">{node.frontmatter.date}</p>
+                  <p className="card-text">{node.frontmatter.description}</p>
                   <p className="card-text"><small className="text-muted">{node.frontmatter.date}</small></p>
                   <span className="badge rounded-pill bg-warning">{node.frontmatter.date}</span>
-                  <Link className='stretched-link' to={`/blog/${node.slug}`}></Link>
+                  <Link className='stretched-link' to={createURL(node.frontmatter.folder, node.frontmatter.title)}></Link>
                 </div>
               </div>
               <div className="col-md-1 col-1 d-flex justify-content-center">

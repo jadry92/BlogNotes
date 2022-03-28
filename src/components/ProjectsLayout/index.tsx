@@ -1,32 +1,62 @@
 import React from 'react'
 import "./styles.scss"
-import { Link } from 'gatsby';
+import { Link, useStaticQuery, graphql } from 'gatsby';
+import { progressSerializer } from '../../utils/serializers'
+import ProjectCard from '../ProjectCard';
+import { count } from 'console';
 
-interface IProject {
-  title : string;
-  description : string;
-  imageURL: string;
+interface INode {
   id: string;
-  slug : string ;
+  slug : string;
+  frontmatter : {
+    description : string;
+    title : string;
+    folder : string;
+    progress : number; 
+  }
 }
 
 interface IProps {
-  projects: IProject[]
+  numberOfProjects: number | undefined
 }
 
-const ProjectsLayout = ({ projects }: IProps) => {
+const ProjectsLayout = ({ numberOfProjects }: IProps) => {
+ 
+  const data = useStaticQuery(graphql`
+    query GET_ALL_PROJECTS_HOME {
+      allMdx(
+        filter: {frontmatter: {folder: {eq: "projects"}, published: {eq: true}}}
+        sort: {fields: frontmatter___levelImportance, order: ASC}
+        ) {
+        nodes {
+          slug
+          id
+          frontmatter {
+            description
+            title
+            folder
+            progress
+          }
+        }
+      }
+    }
+  `)
+
   return (
     <div className="row">
-      {projects.map( ( project: IProject ) => (
-      <div key={project.id}  className="col-sm-12 col-md-6">
-        <div className="card mb-5 mx-4 border border-primary rounded">
-          <Link className="card-link card-body"  to={project.slug}>
-            <h5 className="card-title text-center">{project.title}</h5>
-            <p className="card-text text-dark">{project.description}</p>
-          </Link>
-        </div>
-      </div>
-      ))}
+      {data.allMdx.nodes.map( ( node: INode ) => {
+        const project = {
+          title : node.frontmatter.title, 
+          description : node.frontmatter.description,
+          imageURL: '',
+          id: node.id,
+          slug : node.slug,
+          folder: node.frontmatter.folder,
+          progress: node.frontmatter.progress,
+        }
+
+        return <ProjectCard key={project.id} project={project} />
+      }).slice(0,numberOfProjects)}
     </div>
   )
 }
