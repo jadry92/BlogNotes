@@ -1,6 +1,8 @@
 import React from 'react'
 import { graphql, Link } from 'gatsby'
 import BlogLayout from '../../components/BlogLayout';
+import { progressSerializer, createURL } from '../../utils/serializers'
+import BlogCard from '../../components/BlogCard';
 
 export const query = graphql`
   query GET_ALL_POSTS {
@@ -30,6 +32,7 @@ interface Inode {
     date: string;
     description: string;
     folder: string;
+    progress: number;
   }
 }
 
@@ -41,34 +44,20 @@ interface IData {
 
 
 const BlogPage = ({ data } : {data : IData}) => {
-  
-  const createURL = (folder: string, title: string): string => {
-    return `/${folder}/${title.replace(/ /g,'-')}`
-  } 
 
   return (
     <BlogLayout>
       {
         data.allMdx.nodes.map((node) => (   
-          <div key={node.id} className="card mb-3" >
-            <div className="row g-0">
-              <div className="col-md-4 col-3">
-                <img src="" className="img-fluid rounded-start" alt="..."/>
-              </div>
-              <div className="col-md-7 col-8">
-                <div className="card-body">
-                  <h5 className="card-title">{node.frontmatter.title}</h5>
-                  <p className="card-text">{node.frontmatter.description}</p>
-                  <p className="card-text"><small className="text-muted">{node.frontmatter.date}</small></p>
-                  <span className="badge rounded-pill bg-warning">{node.frontmatter.date}</span>
-                  <Link className='stretched-link' to={createURL(node.frontmatter.folder, node.frontmatter.title)}></Link>
-                </div>
-              </div>
-              <div className="col-md-1 col-1 d-flex justify-content-center">
-                  <p className="align-self-center mb-0">{'-->'}</p>
-              </div>
-            </div>
-          </div>
+          <BlogCard key={node.id} 
+            blog={{
+              title: node.frontmatter.title,
+              date: node.frontmatter.date,
+              description: node.frontmatter.description,
+              folder: node.frontmatter.folder,
+              progress: node.frontmatter.progress
+            }}
+          />
         ))
       }
     </BlogLayout>

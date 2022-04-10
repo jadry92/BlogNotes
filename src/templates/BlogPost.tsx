@@ -28,7 +28,7 @@ interface IPageContext {
 const BlogPost = ({ pageContext } : { pageContext : IPageContext}) => {
 
   return (
-    <div >
+    <div className="container">
       <h1>{pageContext.frontmatter.title}</h1>
       <p>{pageContext.frontmatter.date}</p>
       <div>
