@@ -12,7 +12,21 @@ const config: GatsbyConfig = {
     }
   }, 
   "gatsby-plugin-sharp",
-  "gatsby-plugin-mdx",
+  `gatsby-transformer-sharp`,
+  `gatsby-remark-images`,
+  {
+    resolve: `gatsby-plugin-mdx`,
+    options: {
+      gatsbyRemarkPlugins: [
+        {
+          resolve: `gatsby-remark-images`,
+          options: {
+            maxWidth: 650,
+          },
+        },
+      ],
+    },
+  },
   "gatsby-plugin-sass",
   {
     resolve: 'gatsby-source-filesystem',

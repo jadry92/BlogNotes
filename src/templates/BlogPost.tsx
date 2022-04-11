@@ -1,19 +1,5 @@
 import React from "react"
-import { graphql } from "gatsby"
 import { MDXRenderer } from 'gatsby-plugin-mdx'
-
-// export const query = graphql`
-//   query GET_POST ($id: String) {
-//     mdx(id: {eq: $id}) {
-//       frontmatter {
-//         title
-//         date(formatString: "MMMM D, YYYY")
-//       }
-//       body
-//     }
-//   }
-// `
-
 interface IPageContext {
   slug: string;
   id: string;

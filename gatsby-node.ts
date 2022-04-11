@@ -1,6 +1,6 @@
 
 const path = require(`path`)
-
+const { createURL } = require('./src/utils/serializers')
 
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
@@ -31,7 +31,7 @@ exports.createPages = async ({ graphql, actions }) => {
  
   result.data.allMdx.nodes.forEach((node) => {
     if (node.frontmatter.title !== '') {
-      const url = `${node.frontmatter.folder}/${node.frontmatter.title.replace(/ /g,'-')}`
+      const url = createURL(node.frontmatter.folder, node.frontmatter.title)
       createPage({
         path: url,
         component: blogPostTemplate,

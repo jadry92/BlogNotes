@@ -46,7 +46,7 @@ function progressSerializer(progress: number): progressReturn {
   return respond
 }
 
-function createURL (folder: string, title: string): string {
+function createURL(folder: string, title: string): string {
   return `/${folder}/${title.replace(/ /g,'-')}`
 } 
 
