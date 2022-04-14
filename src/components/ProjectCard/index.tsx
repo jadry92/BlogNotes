@@ -22,10 +22,10 @@ const ProjectCard = ({ project }: { project : IProject }) => {
   
   return (
     <div className="col-sm-12 col-md-6">
-      <div className="card mb-5 mx-4 border border-primary rounded">
+      <div className="card mb-5 mx-4 rounded bg-color-3">
         <div className="card-body">
-          <h5 className="card-title text-center">{project.title}</h5>
-          <p className="card-text text-dark">{project.description}</p>
+          <h5 className="card-title text-center text-white">{project.title}</h5>
+          <p className="card-text text-white">{project.description}</p>
           <Link className='stretched-link' to={createURL(project.folder, project.title)}></Link>
           <div className="progress">
             <div className={`progress-bar ${progressObj.color}`} 

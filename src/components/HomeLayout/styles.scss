@@ -1,7 +1,10 @@
-$color-base-1: #2d3142;
-$color-base-2: #bfc0c0;
-$color-base-3: #ef8354;
-$color-base-4: #4f5d75;
+$color-base-1: #f4f1de;
+$color-base-2: #e07a5f;
+$color-base-3: #3d405b;
+$color-base-4: #81b29a;
+$color-base-5: #f2cc8f;
+
+
 
 .bg-color-1 {
   background-color: $color-base-1;
@@ -15,15 +18,17 @@ $color-base-4: #4f5d75;
 .bg-color-4 {
   background-color: $color-base-4;
 }
-
-@font-face {
-  font-family: 'Red Hat';
-  src: url(/static/fonts/Red_Hat_Display/static/RedHatDisplay-Regular.ttf)
-    format();
+.bg-color-5 {
+  background-color: $color-base-5;
 }
 
-.title-font-family {
-  font-family: 'Red Hat';
+@font-face {
+  font-family: 'Tomorrow';
+  src: local('Tomorrow'), url(../../../static/fonts/Tomorrow/Tomorrow-Regular.ttf) format('truetype');
+}
+
+.blog-title {
+  font-family: 'Tomorrow';
 }
 
 .my-vh-90 {

@@ -6,7 +6,7 @@ interface IProps {
 
 const HomeLayout = ({children} : IProps) => {
   return (
-    <section className=''>
+    <section className='bg-color-3 text-white'>
       {children}
     </section>
   )
