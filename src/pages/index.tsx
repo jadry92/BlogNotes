@@ -5,6 +5,8 @@ import ProjectsLayout from "../components/ProjectsLayout"
 import Footer from "../components/Footer"
 import LatesPublication from "../components/LatesPublication"
 
+import { Link } from 'gatsby'
+import ArrowIcon from '../../static/images/navigate_next_black_24dp.svg'
 
 interface IProps {
   data : []
@@ -57,6 +59,11 @@ const Home = ({ data } : IProps ) => {
         </div>
         <div className="row d-flex justify-content-center">
           <LatesPublication />
+        </div>
+        <div className="row py-5">
+          <p className="h4 d-flex justify-content-center">
+            <Link className='' to='/blog'><ArrowIcon width="50" height="50"/> All posts <ArrowIcon width="50" height="50"/></Link>
+          </p>
         </div>
       </div>
 

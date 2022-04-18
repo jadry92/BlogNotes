@@ -3,7 +3,8 @@ import type { GatsbyConfig } from "gatsby";
 const config: GatsbyConfig = {
   siteMetadata: {
     title: `BlogNotes.Dev`,
-    siteUrl: `https://blognotes.dev`
+    siteUrl: `https://blognotes.dev`,
+    description: 'personal blog',
   },
   plugins: [{
     resolve: `gatsby-plugin-google-gtag`,
@@ -14,6 +15,14 @@ const config: GatsbyConfig = {
       pluginConfig: {
         head: true        
       },
+    }
+  },
+  {
+    resolve: "gatsby-plugin-react-svg",
+    options: {
+      rule: {
+        include: /static/ 
+      }
     }
   },
   "gatsby-plugin-image",
@@ -47,7 +56,20 @@ const config: GatsbyConfig = {
       "name": "static",
       "path": "./static/"
     },
-  }]
+  },
+  {
+    resolve: `gatsby-plugin-manifest`,
+    options: {
+      name: "blognotes.dev",
+      short_name: "blognotes",
+      start_url: "/",
+      background_color: "#3d405b",
+      theme_color: "#3d405b",
+      display: "standalone",
+      icon: "static/images/logo/logoBn.png" // This path is relative to the root of the site.
+    }
+  }
+  ]
 };
 
 export default config;

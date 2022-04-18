@@ -15,7 +15,7 @@ interface IProps {
 }
 
 const BlogCard = ({ blog }: IProps) => { 
-  const image = '../../../static/images/JavaScript_logo_2.png'
+  const image = '../../../static/images/thumbnails/JavaScript_logo_2.png'
   const progressObj =  progressSerializer(blog.progress)
 
   return (
