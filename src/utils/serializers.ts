@@ -50,4 +50,14 @@ function createURL(folder: string, title: string): string {
   return `/${folder}/${title.replace(/ /g,'-')}`
 } 
 
-export { progressSerializer, createURL }
+function thumbnailPath(name: string ): string {
+  let respond = ''
+  if (name === 'js') {
+    respond = '../../../static/images/JavaScript_logo_2.png'
+  } else if ( name === 'python') {
+    respond = '../../../static/images/logoBn.png'
+  }
+  return respond
+}
+
+export { progressSerializer, createURL, thumbnailPath }

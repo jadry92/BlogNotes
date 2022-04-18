@@ -8,12 +8,13 @@ const config: GatsbyConfig = {
   plugins: [{
     resolve: 'gatsby-plugin-google-analytics',
     options: {
-      "trackingId": "UA-153097760-1"
+      "trackingId": "G-GGJ6QEP30D"
     }
-  }, 
+  },
+  "gatsby-plugin-image",
   "gatsby-plugin-sharp",
-  `gatsby-transformer-sharp`,
-  `gatsby-remark-images`,
+  "gatsby-transformer-sharp",
+  "gatsby-remark-images",
   {
     resolve: `gatsby-plugin-mdx`,
     options: {
@@ -33,6 +34,13 @@ const config: GatsbyConfig = {
     options: {
       "name": "content",
       "path": "./content/"
+    },
+  },
+  {
+    resolve: 'gatsby-source-filesystem',
+    options: {
+      "name": "static",
+      "path": "./static/"
     },
   }]
 };

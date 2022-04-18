@@ -1,6 +1,7 @@
 import React from 'react'
-import { Link } from 'gatsby'
-import { progressSerializer, createURL } from '../../utils/serializers'
+import { Link, useStaticQuery, graphql } from 'gatsby'
+import { progressSerializer, createURL, thumbnailPath } from '../../utils/serializers'
+import { StaticImage } from "gatsby-plugin-image"
 
 interface IProps {
   blog: {
@@ -9,30 +10,37 @@ interface IProps {
     description: string;
     folder: string;
     progress: number;
+    thumbnail: string;
   }
 }
 
 const BlogCard = ({ blog }: IProps) => { 
-
+  const image = '../../../static/images/JavaScript_logo_2.png'
   const progressObj =  progressSerializer(blog.progress)
 
   return (
-    <div className="card mb-3 bg-color-3" >
-      <div className="row g-0">
-        <div className="col-md-4 col-3">
-          <img src="" className="img-fluid rounded-start" alt="..."/>
+    <div className="card mb-3 bg-color-3 px-1 text-white" >
+      <div className="row">
+        <div className="col-md-4 col-12 d-flex justify-content-center">
+          <StaticImage 
+            width={130}
+            height={130}
+            placeholder="blurred"
+            src={image} 
+            alt="blogImage"
+            className='align-self-center m-5'
+          />
         </div>
-        <div className="col-md-7 col-8">
+        <div className="col-md-8 col-15">
           <div className="card-body">
-            <h5 className="card-title">{blog.title}</h5>
+            <h5 className="card-title text-center">{blog.title}</h5>
             <p className="card-text">{blog.description}</p>
-            <p className="card-text"><small className="text-muted">{blog.date}</small></p>
-            <span className={`badge rounded-pill ${progressObj.color}`}>{blog.date}</span>
+            <p className="card-text"><small className="text-white-50">{blog.date}</small></p>
+            <div className="d-flex justify-content-end">
+              <span className={`align-self-end badge rounded-pill ${progressObj.color}`}>{progressObj.wLevel}</span>
+            </div>
             <Link className='stretched-link' to={createURL(blog.folder, blog.title)}></Link>
           </div>
-        </div>
-        <div className="col-md-1 col-1 d-flex justify-content-center">
-            <p className="align-self-center mb-0">{'-->'}</p>
         </div>
       </div>
     </div>  

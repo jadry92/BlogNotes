@@ -8,18 +8,18 @@ interface IProps {
 
 const BlogLayout = ({children} : IProps) => {
   return (
-    <section className="d-flex flex-column vh-100">
+    <main className="bg-color-5">
       <Navbar urlRedirect='/blog'/>
-      <main className='container'>
+      <section className='container'>
         <div className='row text-center my-4'>
-          <p className='h1'>Blog</p>
+          <h1 className='display-3 blog-title'>Blog</h1>
         </div>
         <div className="container">
           {children}
         </div>        
-      </main>
+      </section>
       <Footer/>
-    </section>
+    </main>
   )
 }
 
