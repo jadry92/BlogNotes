@@ -6,9 +6,14 @@ const config: GatsbyConfig = {
     siteUrl: `https://blognotes.dev`
   },
   plugins: [{
-    resolve: 'gatsby-plugin-google-analytics',
+    resolve: `gatsby-plugin-google-gtag`,
     options: {
-      "trackingId": "G-GGJ6QEP30D"
+      trackingIds: [
+        "G-GGJ6QEP30D", 
+      ],
+      pluginConfig: {
+        head: true        
+      },
     }
   },
   "gatsby-plugin-image",
