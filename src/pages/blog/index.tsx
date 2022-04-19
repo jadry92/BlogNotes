@@ -33,6 +33,7 @@ interface Inode {
     description: string;
     folder: string;
     progress: number;
+    thumbnail: string; 
   }
 }
 
@@ -51,11 +52,13 @@ const BlogPage = ({ data } : {data : IData}) => {
         data.allMdx.nodes.map((node) => (   
           <BlogCard key={node.id} 
             blog={{
+              id: node.id,
               title: node.frontmatter.title,
               date: node.frontmatter.date,
               description: node.frontmatter.description,
               folder: node.frontmatter.folder,
-              progress: node.frontmatter.progress
+              progress: node.frontmatter.progress,
+              thumbnail: node.frontmatter.thumbnail
             }}
           />
         ))

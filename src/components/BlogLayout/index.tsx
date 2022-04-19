@@ -12,7 +12,7 @@ const BlogLayout = ({children} : IProps) => {
       <Navbar urlRedirect='/blog'/>
       <section className='container'>
         <div className='row text-center my-4'>
-          <h1 className='display-3 blog-title'>Blog</h1>
+          <h1 className='display-2 blog-title'>Blog</h1>
         </div>
         <div className="container">
           {children}

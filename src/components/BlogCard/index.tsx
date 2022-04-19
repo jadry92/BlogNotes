@@ -5,6 +5,7 @@ import { StaticImage } from "gatsby-plugin-image"
 
 interface IProps {
   blog: {
+    id: string;
     title: string;
     date: string;
     description: string;
@@ -19,7 +20,7 @@ const BlogCard = ({ blog }: IProps) => {
   const progressObj =  progressSerializer(blog.progress)
 
   return (
-    <div className="card mb-3 bg-color-3 px-1 text-white" >
+    <div id={blog.id} className="card mb-3 bg-color-3 px-1 text-white" >
       <div className="row">
         <div className="col-md-4 col-12 d-flex justify-content-center">
           <StaticImage 
