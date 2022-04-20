@@ -25,7 +25,7 @@ const Home = ({ data } : IProps ) => {
         <div className="row h-50 align-content-center mx-3">
           <div className="col-12">
             <h2 className="display-4">
-              Hi!, I'm Johan. 
+              Hi!, I'm <Link to='/about'>Johan</Link>. 
             </h2>
           </div>
           <div className="col-12">

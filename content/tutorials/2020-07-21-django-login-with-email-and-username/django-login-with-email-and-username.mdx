@@ -1,0 +1,135 @@
+---
+title: 'Django login with email and username'
+date: 2020-07-21
+description: 'costume logins with django.'
+folder: blog
+published: true
+progress: 100
+thumbnail: python
+tags: [Django, login, python]
+---
+
+This is a simple solution to create costume logins with django.
+
+Working in my project of [AIgram](https://github.com/jadry92/Platzigram-project), I realise that Instagram allows users to login with their username, email and phone number. So I challenge my self to achieve that without breaking the Django authentication structure. Searching about on the internet I found [this post](https://stackoverflow.com/questions/25316765/log-in-user-using-either-email-address-or-username-in-django) where they show how to create multiples login checks using the Django authentication. My implementation of that I summarise in the next steps.
+
+First, add the authentication "backend" class in the "settings.py" that class has your login logic (login with email, log in with phone number, so on.).
+
+```python
+...
+AUTHENTICATION_BACKENDS = [
+    'django.contrib.auth.backends.ModelBackend',
+    'users.backends.EmailModelBackend'
+]
+...
+```
+
+In this case, I add the default "ModelBackend" which allows me to log in with username and "EmailModelBackend" which is my costume.
+
+Second, create a python file "backends.py" in the "users" app with the class "EmailModelBackend".
+This class inherit from "ModelBackend" and re-write the method "authenticate" as is shown in the code.
+
+```python
+# Django
+from django.contrib.auth.backends import ModelBackend
+# Models
+from users.models import User
+
+class EmailModelBackend(ModelBackend):
+    """
+    authentication class to login with the email address.
+    """
+
+    def authenticate(self, request, username=None, password=None, **kwargs):
+
+        if '@' in username:
+            kwargs = {'email': username}
+        else:
+            return None
+        if password is None:
+            return None
+        try:
+            user = User.objects.get(**kwargs)
+
+        except User.DoesNotExist:
+            User.set_password(password)
+
+        else:
+            if user.check_password(password) and self.user_can_authenticate(user):
+                return user
+
+```
+
+I re-write the method base on the base [code](https://github.com/django/django/blob/3d16496037fbb8a6bbc6b6e354fa4f5eb65e6cea/django/contrib/auth/backends.py#L9)
+
+Also, I create this unittest to make sure it's working properly:
+
+```python
+"""Login views unit test"""
+
+# Django
+from django.test import TestCase, Client
+from django.urls import reverse
+# Models
+from users.models import User
+
+
+class TestLoginView(TestCase):
+    """Test the functionality of the Login view"""
+    def setUp(self):
+        """Initialise variables."""
+        self.client = Client()
+        self.url = reverse('users:login')
+
+    def test_basic_login_username(self):
+        """Test basic login username"""
+        response = self.client.post(reverse('users:signup'), {
+            'username': 'john123',
+            'password': '12345',
+            'password_confirmation': '12345',
+            'first_name': 'john',
+            'last_name': 'smith',
+            'email': 'john@smith.io'
+        })
+
+        self.assertEquals(response.status_code, 302)
+        self.assertEquals(response.url, reverse('users:send_email_verification'))
+        self.assertEquals(User.objects.get(username='john123').email, 'john@smith.io')
+
+        response = self.client.post(self.url, {
+            'username': 'john123',
+            'password': '12345'
+        })
+
+        self.assertEquals(response.status_code, 302)
+        self.assertIsNone(response.context)
+
+    def test_basic_login_email(self):
+        """Test basic login email"""
+        response = self.client.post(reverse('users:signup'), {
+            'username': 'john123',
+            'password': '12345',
+            'password_confirmation': '12345',
+            'first_name': 'john',
+            'last_name': 'smith',
+            'email': 'john@smith.io'
+        })
+
+        self.assertEquals(response.status_code, 302)
+        self.assertEquals(response.url, reverse('users:send_email_verification'))
+        self.assertEquals(User.objects.get(username='john123').email, 'john@smith.io')
+
+        response = self.client.post(self.url, {
+            'username': 'john@smith.io',
+            'password': '12345'
+        })
+
+        self.assertEquals(response.status_code, 302)
+        self.assertIsNone(response.context)
+
+```
+
+## To Have In mind:
+
+- The Django authentication checks all the backends and which first allow to authenticate will use.
+- The stronger of the system is equal at the weakest point.
