@@ -1,10 +1,12 @@
 import React from "react"
 import { MDXRenderer } from 'gatsby-plugin-mdx'
 import Footer from "../components/Footer";
-
+import { components } from "../components/mdx";
+import { MDXProvider } from "@mdx-js/react"
 import { Link } from 'gatsby'
 import ArrowIcon from '../../static/images/chevron_left_black_24dp.svg'
 import Navbar from "../components/Navbar";
+import "katex/dist/katex.min.css"
 
 interface IPageContext {
   slug: string;
@@ -15,6 +17,11 @@ interface IPageContext {
     date: string;
     folder: string;
   }
+}
+
+const components_1 = {
+  p: props => <p {...props} style={{ color: "rebeccapurple" }} />,
+  wrapper: ({ children }) => children,
 }
 
 const BlogPost = ({ pageContext } : { pageContext : IPageContext}) => {
@@ -30,9 +37,11 @@ const BlogPost = ({ pageContext } : { pageContext : IPageContext}) => {
       </div>
       <div className="row mt-4">
         <div className="col-md-8 offset-md-2">
-          <MDXRenderer>
-            {pageContext.body}
-          </MDXRenderer>
+          <Layout >
+            <MDXRenderer> 
+              {pageContext.body}
+            </MDXRenderer>
+          </Layout>
         </div>
       </div>
       <div className="row py-2">
@@ -47,6 +56,15 @@ const BlogPost = ({ pageContext } : { pageContext : IPageContext}) => {
   )
 }
 
+function Layout({ children }) {
+  return (
+    <MDXProvider
+      components={components}
+    >
+      {children}
+    </MDXProvider>
+  )
+}
 
 export default BlogPost
 

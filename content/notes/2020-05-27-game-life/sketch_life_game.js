@@ -1,5 +1,5 @@
-// Game of the life in Javascrip with P5.js
-// by : @jadry 92
+// Game of the life in Javascript with P5.js
+// by : @jadry 92 - Johan Suarez Largo
 
 
 let nx = 25

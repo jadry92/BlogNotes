@@ -25,6 +25,19 @@ const config: GatsbyConfig = {
       }
     }
   },
+  {
+    resolve: `gatsby-transformer-remark`,
+    options: {
+      plugins: [
+        {
+          resolve: `gatsby-remark-katex`,
+          options: {
+            strict: `ignore`
+          }
+        }
+      ],
+    },
+  },
   "gatsby-plugin-image",
   "gatsby-plugin-sharp",
   "gatsby-transformer-sharp",
