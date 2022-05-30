@@ -7,7 +7,7 @@ const LatesPublication = () => {
   const data = useStaticQuery(graphql`
   query GET_LAST_POST {
     allMdx(
-      filter: {frontmatter: {folder: {eq: "blog"}, published: {eq: true}}}
+      filter: {frontmatter: {folder: {eq: "blog"}, published: {eq: true}, progress:{eq : 100}}}
       sort: {fields: frontmatter___date, order: DESC}
       limit: 1
       ) {
@@ -27,6 +27,7 @@ const LatesPublication = () => {
   }
   `)
   const lastBlog = {
+    id:data.allMdx.nodes[0].id,
     title: data.allMdx.nodes[0].frontmatter.title,
     date: data.allMdx.nodes[0].frontmatter.date,
     description: data.allMdx.nodes[0].frontmatter.description,
@@ -36,7 +37,7 @@ const LatesPublication = () => {
   }
 
   return (
-    <div className="w-75">
+    <div className="">
       <BlogCard blog={lastBlog}/>
     </div>
   )

@@ -57,8 +57,10 @@ const Home = ({ data } : IProps ) => {
             <h2 className="ps-4">Lates Publication:</h2>
           </div>
         </div>
-        <div className="row d-flex justify-content-center">
-          <LatesPublication />
+        <div className="row">
+          <div className="offset-3 col-6">
+            <LatesPublication />
+          </div>
         </div>
         <div className="row py-5">
           <p className="h4 d-flex justify-content-center">
