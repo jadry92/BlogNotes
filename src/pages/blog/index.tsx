@@ -50,18 +50,20 @@ const BlogPage = ({ data } : {data : IData}) => {
     <BlogLayout>
       {
         data.allMdx.nodes.map((node) => (   
-          <BlogCard key={node.id} 
-            blog={{
-              id: node.id,
-              title: node.frontmatter.title,
-              date: node.frontmatter.date,
-              description: node.frontmatter.description,
-              folder: node.frontmatter.folder,
-              progress: node.frontmatter.progress,
-              thumbnail: node.frontmatter.thumbnail
-            }}
-          />
-        ))
+          <div className="col-md-6 col-12" key={node.id}>
+            <BlogCard  
+              blog={{
+                id: node.id,
+                title: node.frontmatter.title,
+                date: node.frontmatter.date,
+                description: node.frontmatter.description,
+                folder: node.frontmatter.folder,
+                progress: node.frontmatter.progress,
+                thumbnail: node.frontmatter.thumbnail
+              }}
+            />
+          </div>
+          ))
       }
     </BlogLayout>
   )

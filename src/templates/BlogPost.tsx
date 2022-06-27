@@ -19,9 +19,8 @@ interface IPageContext {
   }
 }
 
-const components_1 = {
-  p: props => <p {...props} style={{ color: "rebeccapurple" }} />,
-  wrapper: ({ children }) => children,
+interface IProps {
+  children: React.ReactChild | React.ReactChild[] | JSX.Element[]
 }
 
 const BlogPost = ({ pageContext } : { pageContext : IPageContext}) => {
@@ -56,7 +55,7 @@ const BlogPost = ({ pageContext } : { pageContext : IPageContext}) => {
   )
 }
 
-function Layout({ children }) {
+function Layout({ children }: IProps) {
   return (
     <MDXProvider
       components={components}

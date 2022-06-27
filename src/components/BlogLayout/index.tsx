@@ -15,7 +15,9 @@ const BlogLayout = ({children} : IProps) => {
           <h1 className='display-2 blog-title'>Blog</h1>
         </div>
         <div className="container">
-          {children}
+          <div className="row">
+            {children}
+          </div>
         </div>        
       </section>
       <Footer/>

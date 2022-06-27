@@ -5,6 +5,7 @@ import ProjectsLayout from "../components/ProjectsLayout"
 import Footer from "../components/Footer"
 import LatesPublication from "../components/LatesPublication"
 
+
 import { Link } from 'gatsby'
 import ArrowIcon from '../../static/images/navigate_next_black_24dp.svg'
 
@@ -58,7 +59,7 @@ const Home = ({ data } : IProps ) => {
           </div>
         </div>
         <div className="row">
-          <div className="offset-3 col-6">
+          <div className="offset-1 col-10 offset-md-3 col-md-6">
             <LatesPublication />
           </div>
         </div>
@@ -68,7 +69,6 @@ const Home = ({ data } : IProps ) => {
           </p>
         </div>
       </div>
-
       <Footer/>
 
     </HomeLayout>

@@ -2,7 +2,6 @@
 const path = require(`path`)
 const { createURL } = require('./src/utils/serializers')
 
-
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
   const blogPostTemplate = path.resolve(`src/templates/BlogPost.tsx`)
