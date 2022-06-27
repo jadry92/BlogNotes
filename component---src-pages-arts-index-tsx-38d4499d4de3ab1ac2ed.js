@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkblog=self.webpackChunkblog||[]).push([[547],{7440:function(e,n,l){l.r(n);var t=l(7294),u=(0,l(5305).ZP)((function(){return Promise.all([l.e(6),l.e(483)]).then(l.bind(l,3358))}));n.default=function(){return t.createElement("div",null,t.createElement(u,null))}}}]);
+//# sourceMappingURL=component---src-pages-arts-index-tsx-38d4499d4de3ab1ac2ed.js.map
