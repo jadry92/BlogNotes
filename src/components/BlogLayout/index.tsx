@@ -8,8 +8,8 @@ interface IProps {
 
 const BlogLayout = ({children} : IProps) => {
   return (
-    <main className="bg-color-5">
-      <Navbar urlRedirect='/blog'/>
+    <section className="bg-color-5">
+      <Navbar urlRedirect='/'/>
       <section className='container'>
         <div className='row text-center my-4'>
           <h1 className='display-2 blog-title'>Blog</h1>
@@ -21,7 +21,7 @@ const BlogLayout = ({children} : IProps) => {
         </div>        
       </section>
       <Footer/>
-    </main>
+    </section>
   )
 }
 

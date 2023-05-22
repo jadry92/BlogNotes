@@ -1,9 +1,8 @@
 import React from 'react'
 import "./styles.scss"
-import { Link, useStaticQuery, graphql } from 'gatsby';
-import { progressSerializer } from '../../utils/serializers'
+import { useStaticQuery, graphql } from 'gatsby';
 import ProjectCard from '../ProjectCard';
-import { count } from 'console';
+
 
 interface INode {
   id: string;
@@ -22,7 +21,7 @@ interface IProps {
 
 const ProjectsLayout = ({ numberOfProjects }: IProps) => {
  
-  const data = useStaticQuery(graphql`
+  const allData = useStaticQuery(graphql`
     query GET_ALL_PROJECTS_HOME {
       allMdx(
         filter: {frontmatter: {folder: {eq: "projects"}, published: {eq: true}}}
@@ -42,9 +41,16 @@ const ProjectsLayout = ({ numberOfProjects }: IProps) => {
     }
   `)
 
+  let data = []
+  if (numberOfProjects){
+    data = allData.allMdx.nodes.slice(0,numberOfProjects)
+  } else {
+    data = allData.allMdx.nodes
+  }
+
   return (
     <div className="row">
-      {data.allMdx.nodes.map( ( node: INode ) => {
+      {data.map( ( node: INode ) => {
         const project = {
           title : node.frontmatter.title, 
           description : node.frontmatter.description,
@@ -56,7 +62,7 @@ const ProjectsLayout = ({ numberOfProjects }: IProps) => {
         }
 
         return <ProjectCard key={project.id} project={project} />
-      }).slice(0,numberOfProjects)}
+      })}
     </div>
   )
 }
