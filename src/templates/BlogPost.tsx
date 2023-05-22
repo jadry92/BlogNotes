@@ -3,7 +3,7 @@ import { MDXRenderer } from 'gatsby-plugin-mdx'
 import Footer from "../components/Footer";
 import { components } from "../components/mdx";
 import { MDXProvider } from "@mdx-js/react"
-import { Link } from 'gatsby'
+import { Link, useScrollRestoration } from 'gatsby'
 import ArrowIcon from '../../static/images/chevron_left_black_24dp.svg'
 import Navbar from "../components/Navbar";
 import "katex/dist/katex.min.css"
@@ -24,9 +24,10 @@ interface IProps {
 }
 
 const BlogPost = ({ pageContext } : { pageContext : IPageContext}) => {
-
+  const mainScrollRestoration = useScrollRestoration(`main`)
+  
   return (
-    <div className="container-fluid bg-color-3 text-white min-vh-100">
+    <div className="container-fluid bg-color-3 text-white min-vh-100 main" {...mainScrollRestoration}>
       <div className="row">
         <Navbar urlRedirect="/"/>
       </div>
